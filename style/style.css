@@ -22,8 +22,18 @@ a{
     margin: 0;
 }
 
+h1{
+    padding: 0;
+    margin: 0;
+}
+
 li{
     list-style: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
 
 *{
@@ -32,6 +42,7 @@ li{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    color: var(--black);
 }
 
 .container{
@@ -39,10 +50,31 @@ li{
     margin: 0 auto;
 }
 
+section{
+    margin-bottom: 80px;
+}
+
+.btn{
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 7px;
+    padding: 12px;
+}
+
+.btn:hover{
+    background-color: var(--red);
+    transition: .1s;
+    cursor: pointer;
+}
+
+
 /* header */
 
 header{
     padding: 25px ;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 header nav .container{
@@ -95,10 +127,17 @@ header .main-header{
     margin-top: 26px;
 }
 
+header .main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*  */
 
 .search {
     display: flex;
+
   }
 
   .search-btn {
@@ -114,6 +153,7 @@ header .main-header{
 
   .search-btn:hover {
     background-color: var(--red);
+    cursor: pointer;
     transition: .1s;
   }
 
@@ -149,8 +189,59 @@ header .main-header .contact-block .info-block a .info{
 }
 
 header .main-header .contact-block .info-block a .info .main-info{
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 15px;
     line-height: 19px;
     color: var(--black);
+}
+
+header .main-header .contact-block .info-block a .info .additionally-info{
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: rgba(123, 123, 123, 1);
+}
+
+/* main */
+
+main{
+    margin-top: 80px;
+}
+
+main section .container .slick .info-block{
+    height: 526px;
+    display: flex;
+    padding: 10px;
+}
+
+main section .container .slick .info-block .info{
+    width: 50%;
+    margin-right: 60px;
+}
+
+main section .container .slick .info-block .info h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    width: 474px;
+    margin-bottom: 35px;
+}
+
+main section .container .slick .info-block .info p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 163.98%;
+    width: 474px;
+    margin-bottom: 35px;
+}
+
+main section .container .slick .info-block .img-page{
+    width: 50%;
+}
+
+main section .container .slick .info-block .img-page img{
+    object-fit: cover;
+    width: 100%;
 }
