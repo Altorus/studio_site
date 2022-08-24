@@ -262,6 +262,7 @@ main section .container .about-grid .block{
     border-left: 6px solid var(--red);
     max-width: 453px;
     transition: .1s;
+    border-radius: 0 18px 18px 0;
 }
 
 main section .container .about-grid .block:hover {

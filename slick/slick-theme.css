@@ -132,6 +132,7 @@
 
     list-style: none;
 }
+
 .slick-dots li
 {
     position: relative;
@@ -196,6 +197,90 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
+{
+    font-size: 36px;
+    color: #CE2D4F;
+    content: '●';
+}
+
+.products-dots
+{
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    list-style: none;
+}
+
+.products-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.products-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.products-dots li button:hover,
+.products-dots li button:focus
+{
+    outline: none;
+}
+.products-dots li button:hover:before,
+.products-dots li button:focus:before
+{
+    opacity: 1;
+}
+.products-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 36px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '○';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.products-dots li.slick-active button:before
 {
     font-size: 36px;
     color: #CE2D4F;
