@@ -22,7 +22,7 @@ a{
     margin: 0;
 }
 
-h1{
+h1, h2, h3, p{
     padding: 0;
     margin: 0;
 }
@@ -31,10 +31,6 @@ li{
     list-style: none;
 }
 
-p{
-    margin: 0;
-    padding: 0;
-}
 
 *{
     box-sizing: border-box;
@@ -245,3 +241,51 @@ main section .container .slick .info-block .img-page img{
     object-fit: cover;
     width: 100%;
 }
+
+main section .container h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 103px;
+    letter-spacing: 0.105em;
+}
+
+main section .container .about-grid{
+    display: grid;
+    gap: 73px 115px;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section .container .about-grid .block{
+    padding: 10px 10px 10px 20px;
+    border-left: 6px solid var(--red);
+    max-width: 453px;
+    transition: .1s;
+}
+
+main section .container .about-grid .block:hover {
+    outline: 1px solid #C6AE25;
+    border-left: 6px solid var(--red);
+    border-radius: 0 18px 18px 0;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: .1s;
+}
+
+main section .container .about-grid .block h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.105em;
+    margin-bottom: 12px;
+}
+
+main section .container .about-grid .block p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 145.9%;
+    letter-spacing: 0.035em;
+    color: rgba(23, 23, 23, 0.8);
+}
+
