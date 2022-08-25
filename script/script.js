@@ -23,7 +23,8 @@ $(document).ready(function() {
     $('.slick-stock').slick({
         prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
         nextArrow: '<button type = "button" class = "next-stock"></ button> ',
-
+        autoplay: true,
+        autoplaySpeed: 3000,
         dots: true,
         dotsClass: 'products-dots',
         fade: true,
