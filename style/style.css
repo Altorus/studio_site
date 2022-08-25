@@ -416,6 +416,9 @@ main section  .slick-stock .bacground-stock .container-stock .block-stock{
 
 main section  .slick-stock .bacground-stock .container-stock .block-stock img{
     margin-right: 140px;
+    width: 318px;
+    height: 353px;
+    object-fit: contain;
 }
 
 main section  .slick-stock .bacground-stock .container-stock .block-stock .info-stock .coast-stock{
@@ -520,23 +523,11 @@ main section .slick-stock .slick-arrow.slick-prev{
 
 main section .about{
     display: flex;
-}
-
-
-
-main section .container .slick-about{
-    margin-right: 40px;
-    width: 50%;
-    min-width: 0;
-}
-
-main section .container .slick-about img{
-    height: 435px;
-    object-fit: cover;
+    justify-content: space-between;
 }
 
 main section .container .info-about{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -556,3 +547,78 @@ main section .container .info-about p:last-of-type{
     margin-bottom: 40px;
 }
 
+
+main section .container .slider-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section .container .slider-about .slideshow-container{
+    margin-right: 40px;
+    width: 50%;
+    min-width: 0;
+    position: relative;
+    height: 605px;
+}
+
+main section .container .slider-about .slideshow-container .mySlides img{
+    object-fit: cover;
+}
+
+
+  main section .container .slider-about .slideshow-container .main{
+    width: 499px;
+    height: 435px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+  }
+
+  main section .container .slider-about .slideshow-container .next{
+    position: absolute;
+    z-index: 2;
+    top: 139px;
+    left: 211px;
+    width: 394px;
+    height: 338px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+  }
+
+  main section .container .slider-about .slideshow-container .hidden{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    display: none;
+    transition: .3s ease-in-out;
+  }
+
+  
+
+  main section .container .slider-about .dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

@@ -30,8 +30,44 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $('.slick-about').slick({
-        
-    });
-});
+
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('main');
+    slides[i].classList.add('hidden');
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].classList.remove('hidden')
+
+  if(slideIndex==slides.length){
+    slides[0].classList.remove('hidden')
+    slides[0].classList.add('next')
+  }else{
+    slides[slideIndex].classList.remove('hidden')
+    slides[slideIndex].classList.add('next')
+  }
+
+  slides[slideIndex-1].classList.remove('next')
+  slides[slideIndex-1].classList.add('main')
+
+//   setTimeout(showSlides, 5000); // Change image every 2 seconds
+} 
