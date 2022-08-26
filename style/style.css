@@ -52,6 +52,10 @@
             font-size: 14px;
             color: var(--black);
         }
+
+        body{
+            overflow-x: hidden;
+        }
         
         .container {
             width: 1180px;
@@ -79,8 +83,11 @@
         /* header */
         
         header {
+            z-index: 5;
             padding: 25px;
             box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            position: relative;
+            background-color: var(--white);
         }
         
         header nav .container {
@@ -1394,4 +1401,260 @@ main .error .block-left span{
     font-size: 150px;
     line-height: 183px;
     color: var(--white);
+}
+
+/* Декоративные элементы */
+
+.block1{
+    left: 114px;
+    top: 644px;
+    position: absolute;
+    height: 66px;
+    width: 66px;
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block2{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 55px;
+    top: 708px;
+
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block3{
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    left: 97px;
+    top: 749px;
+
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block4{
+    position: absolute;
+    width: 516px;
+    height: 516px;
+    right: -260px;
+    top: 539px;
+
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: rotate(45deg);
+}
+
+.block5{
+    position: absolute;
+    width: 169px;
+    height: 160px;
+    left: -90px;
+    top: 1321px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.block6{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    right: 100px;
+    top: 3499px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+.block7{
+    position: absolute;
+    width: 169px;
+    height: 160px;
+    left: -90px;
+    top: 1321px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.block8{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 58px;
+    top: 3563px;
+    
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+.block9{
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    right: 88px;
+    top: 3604px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+.block10{
+    position: absolute;
+    width: 516px;
+    height: 516px;
+    left: -437px;
+    top: 3394px;
+    
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+.block11{
+    position: absolute;
+    width: 169px;
+    height: 169px;
+    right: -100px;
+    top: 4176px;
+    
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+.block12{
+    position: absolute;
+    width: 169px;
+    height: 169px;
+    left: -100px;
+    top: 5085px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block-contact1{
+    position: absolute;
+    width: 201px;
+    height: 201px;
+    left: -170px;
+    top: 204px;
+    
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: rotate(45deg);
+}
+
+.block-contact2{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    right: 226px;
+    top: 248px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block-contact3{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    right: 282px;
+    top: 295px;
+    
+    background: rgba(206, 45, 79, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block-contact4{
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    right: 226px;
+    top: 325px;
+
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.block-error1{
+    position: absolute;
+    width: 201px;
+    height: 201px;
+    left: -173px;
+    top: 204px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: rotate(45deg);
+}
+
+.block-error2{
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    left: 973px;
+    top: 173px;
+    z-index: 1;
+    
+    background: #C6AE25;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+
+.block-error3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 308px;
+    top: -20px;
+    z-index: 1;
+    
+    background: #C6AE25;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+
+.block-catalog1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -160px;
+    top: 204px;
+    
+    background: rgba(198, 174, 37, 0.9);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: rotate(45deg);
 }
