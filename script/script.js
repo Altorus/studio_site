@@ -41,6 +41,29 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('.slick-product').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dotsClass: 'products-dots',
+    });
+});
+
+$(document).ready(function() {
+    $('.slick-more-products').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
+        nextArrow: '<button type = "button" class = "next-stock"></ button> ',
+        dotsClass: 'products-dots',
+    });
+});
+
 
 
 
