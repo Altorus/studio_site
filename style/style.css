@@ -83,7 +83,7 @@
         /* header */
         
         header {
-            z-index: 5;
+            /* z-index: 5; */
             padding: 25px;
             box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
             position: relative;
@@ -1676,7 +1676,7 @@ main .error .block-left span{
     height: 126px;
     left: 973px;
     top: 173px;
-    z-index: 1;
+    z-index: -1;
     
     background: #C6AE25;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -1690,7 +1690,7 @@ main .error .block-left span{
     height: 200px;
     right: 308px;
     top: -20px;
-    z-index: 1;
+    z-index: -1;
     
     background: #C6AE25;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
