@@ -462,7 +462,7 @@
             /* background-color: var(--pink); */
             border: none;
             padding: 10px;
-            background: url('./images/icons/prew.svg') 0 0 /20% no-repeat;
+            background: url('/images/icons/prew.svg') 0 0 /20% no-repeat;
             background-position: center;
             border-radius: 50%;
             padding: 24px;
