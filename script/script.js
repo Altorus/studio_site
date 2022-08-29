@@ -63,6 +63,12 @@ $(document).ready(function() {
         dotsClass: 'products-dots',
     });
 
+    // pop up
+
+    $('.close').click(()=>{
+        $('.b-popup').toggleClass('b-popup-hiden')
+    })
+
 });
 
 
@@ -122,3 +128,4 @@ $("a.scroll-to").on("click", function(e){
         scrollTop: $(anchor).offset().top - 60
     }, 800);
 });
+

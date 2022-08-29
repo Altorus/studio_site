@@ -1910,3 +1910,8 @@ main .error .block-left span{
     border-radius: 50%;
     border: 1px solid var(--pink);
 }
+
+.close{
+    position: absolute;
+    background-image: url('/images/icons/close.svg');
+}
