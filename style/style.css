@@ -1842,13 +1842,71 @@ main .error .block-left span{
     }
 }
 
-
-/* .deco-initial{
-    transform: translateY(0px) rotate(45deg);
-    transition: 7s;
+/* pop up */
+.b-popup{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
 }
 
-.deco-active{
-    transform: translateY(100px) rotate(45deg);
-    transition: 7s;
-} */
+.b-popup .b-popup-content{
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 26px;
+    transform: translateX(20px);
+    z-index: 1;
+}
+
+.b-popup .b-popup-content p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.b-popup .b-popup-content span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: var(--black);
+}
+
+.b-popup .b-popup-content a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: var(--pink);
+    border-bottom: 1px solid var(--pink);
+}
+
+.b-popup .b-popup-img{
+    z-index: 2;
+    background-color: var(--white);
+    background-image: url('../images/men.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 30px 0 30px;
+    height: 227px;
+    width: 227px;
+    /* background: #FFFFFF; */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: 1px solid var(--pink);
+}
