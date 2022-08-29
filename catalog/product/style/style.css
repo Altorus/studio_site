@@ -133,6 +133,21 @@ main section .container .main-info-product .info-block .coast-container span{
     line-height: 32px;
 }
 
+main section .container .main-info-product .select-color{
+    margin-bottom: 18px;
+}
+
+main section .container .main-info-product .select-color input{
+    width: 26px;
+    height: 26px;
+    border: none;
+}
+
+main section .container .main-info-product .select-color input:hover{
+    outline: 1px solid var(--black);
+    cursor: pointer;
+}
+
 main section .container .main-info-product .info-block .size-container{
     display: flex;
     align-items: center;
