@@ -68,6 +68,12 @@ $(document).ready(function() {
     $('.close').click(()=>{
         $('.b-popup').toggleClass('b-popup-hiden')
     })
+    setInterval(()=>popupBlock(), 120000)
+
+    function popupBlock() {
+        $('.b-popup').removeClass('b-popup-hiden')
+       
+    }
 
 });
 

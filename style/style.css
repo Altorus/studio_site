@@ -1850,6 +1850,7 @@ main .error .block-left span{
     bottom: 20px;
     right: 20px;
     z-index: 100;
+    transition: .3s;
 }
 
 .b-popup .b-popup-content{
@@ -1913,5 +1914,19 @@ main .error .block-left span{
 
 .close{
     position: absolute;
+    height: 26px;
+    width: 26px;
+    z-index: 2;
+    top: 46px;
+    left: 8px;
     background-image: url('/images/icons/close.svg');
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.b-popup-hiden{
+    right: -100%;
+    transition: .3s;
 }
