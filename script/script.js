@@ -62,6 +62,7 @@ $(document).ready(function() {
         nextArrow: '<button type = "button" class = "next-stock"></ button> ',
         dotsClass: 'products-dots',
     });
+
 });
 
 
@@ -107,7 +108,6 @@ function showSlides(n) {
     slides[slideIndex - 1].classList.remove('next')
     slides[slideIndex - 1].classList.add('main')
     dots[slideIndex - 1].className += " active";
-    console.log(slideIndex);
 
 
 
