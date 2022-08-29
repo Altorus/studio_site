@@ -433,4 +433,14 @@ main section .slick-stock .slick-arrow.slick-prev {
     cursor: pointer;
 }
 
+.select-color input{
+    border: none;
+    outline: none;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 18px;
+}
 
+.select-color input:hover{
+    cursor: pointer;
+}

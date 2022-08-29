@@ -68,12 +68,40 @@ $(document).ready(function() {
     $('.close').click(()=>{
         $('.b-popup').toggleClass('b-popup-hiden')
     })
+    setTimeout(()=>popupBlock(), 2000)
     setInterval(()=>popupBlock(), 120000)
 
     function popupBlock() {
         $('.b-popup').removeClass('b-popup-hiden')
        
     }
+
+    $('.popup-open').click(function() {
+		$('.popup-fade').fadeIn();
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+
+    $('#bntUpload').click(function(){
+        $("#photo").click();
+    });
 
 });
 

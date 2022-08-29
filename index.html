@@ -20,6 +20,7 @@
     <!-- <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
     <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <title>Белая мебель</title>
 </head>
 
@@ -42,6 +43,54 @@
         </nav>
         <div class="main-header">
             <div class="container">
+
+                <div class="popup-fade">
+                    <div class="popup">
+                        <a class="popup-close" href="#">Закрыть</a>
+                        <form action="#" class="test">
+                            <div class="custom-input">
+                                <label class="label-form" for="what-modal">Что хотим?</label>
+                                <select name="" class="input-form" id="what-modal">
+                                    <option value="" selected disabled>Комод</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="size-model">Знаете размеры?</label>
+                                <select name="" class="input-form" id="size-model">
+                                    <option value="" selected disabled>Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="width">Ширина</label>
+                                <input class="input-form" placeholder="Ширина" type="text" id="width">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form"  for="length">Длина</label>
+                                <input class="input-form" placeholder="Длина" type="text" id="length">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="photo">Прикрепить фото</label>
+                                <input class="input-form" type="file" name="" id="photo" style="display:none;">
+                                <button class="input-form" id="bntUpload" style="text-align: start;">Загрузить фото</button>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <span>Вызвать замерщика</span>
+                            </div>
+                            <div class="custom-input select-color">
+                                <label class="color-label" for="color">Выбрать цвет</label>
+                                <input type="color" value="#B4A7AE" name="" id="color">
+                            </div>
+                            
+                            <input type="submit" value="Оформить" class="btn">
+                        </form>
+                    </div>	
+                </div>
 
                 <div class="logo">
                     <a href="#">
@@ -91,18 +140,18 @@
                 </div>
 
                 <div class="callback">
-                    <input type="button" value="Заказать звонок" class="btn">
+                    <input type="button" value="Заказать звонок" class="btn popup-open">
                 </div>
 
             </div>
         </div>
     </header>
     <main>
-        <div class="b-popup">
+        <div class="b-popup b-popup-hiden">
             <div class="close"></div>
             <div class="b-popup-content">
                 <p>Чем могу вам помочь</p>
-                <span>Можно оставить <a href="#">звонок</a> и вам перезвонит менеджер</span>
+                <span>Можно оставить <a href="tel:+79278921675">звонок</a> и вам перезвонит менеджер</span>
             </div>
             <div class="b-popup-img">
                 <!-- <img src="/images/men.png" alt="men"> -->
@@ -128,7 +177,7 @@
                         <div class="info">
                             <h1>Заголовок, оффер</h1>
                             <p>Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации направлений прогрессивного развития.</p>
-                            <input type="button" class="btn" value="Заказать по индивидуальным размерам">
+                            <input type="button" class="btn popup-open" value="Заказать по индивидуальным размерам">
                         </div>
                         <div class="img-page">
                             <img src="images/furniture/shkaf-kupe-euro-quality 1.png" alt="shkaf">
@@ -192,7 +241,7 @@
             <div class="container">
                 <h2>Топ товаров</h2>
                 <div class="slick-products">
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -209,7 +258,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -226,7 +275,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -243,7 +292,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -260,8 +309,7 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -278,8 +326,7 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -296,8 +343,7 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -314,8 +360,7 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="catalog/">
+                    <a href="/catalog/product/index.html">
                         <div class="product">
                             <p class="name">Кровать</p>
                             <img src="images/furniture/bed.png" alt="bed">
@@ -324,7 +369,7 @@
                                     <div class="coast">16 900р</div>
                                     <div class="old-price">
                                         <span>20 900</span>
-                                        <span>-20%</span>
+                                        <span class="discount">-20%</span>
                                     </div>
                                     <p>Хит-продаж</p>
                                 </div>
@@ -332,6 +377,7 @@
                             </div>
                         </div>
                     </a>
+                    
 
                 </div>
             </div>
@@ -432,7 +478,7 @@
                     <h2>О нашей компании</h2>
                     <p>Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации направлений прогрессивного развития.</p>
                     <p>Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации направлений прогрессивного развития.</p>
-                    <a href="contact.html" class="btn">Наши Контакты</a>
+                    <a href="contact.html" class="btn">Наши контакты</a>
                 </div>
             </div>
         </section>
@@ -637,12 +683,12 @@
                             <input class="input-form" type="text" id="name" placeholder="Ваше имя">
                         </div>
                         <div class="custom-input">
-                            <label class="label-form" for="name">Номер телефона</label>
+                            <label class="label-form" for="phone">Номер телефона</label>
                             <input class="input-form" type="phone" id="phone" placeholder="+7(000)000-00-00">
                         </div>
                         <div class="custom-input">
-                            <label class="label-form" for="name">Какой товар нужен</label>
-                            <select name="" class="input-form" id="">
+                            <label class="label-form" for="what">Какой товар нужен</label>
+                            <select name="" class="input-form" id="what">
                                 <option value="" selected disabled>Название товара</option>
                                 <option value="">2</option>
                                 <option value="">3</option>
@@ -768,7 +814,7 @@
                     <a href="#" class="img"></a>
                     <a href="#" class="img"></a>
                 </div>
-                <a href="#" class="btn">Заказать звонок</a>
+                <a href="#" class="btn popup-open">Заказать звонок</a>
                 <!-- открытие модалки -->
             </div>
         </div>

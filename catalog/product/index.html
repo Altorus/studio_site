@@ -23,30 +23,72 @@
         <nav>
             <div class="container">
                 <ul>
-                    <li><a href="/catalog/">Каталог</a></li>
-                    <li><a class="scroll-to" href="/#about">О компании</a></li>
+                    <li><a href="/catalog">Каталог</a></li>
+                    <li><a class="scroll-to" href="#about">О компании</a></li>
                     <li><a href="/contact.html">Контакты</a></li>
-                    <li><a class="scroll-to" href="/#review">Отзывы</a></li>
+                    <li><a class="scroll-to" href="#review">Отзывы</a></li>
                 </ul>
                 <div class="messanger">
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="vk">
-                    </a>
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="whatsapp">
-                    </a>
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="telegram">
-                    </a>
+                    <a href="#" class="img"></a>
+                    <a href="#" class="img"></a>
+                    <a href="#" class="img"></a>
                 </div>
             </div>
         </nav>
         <div class="main-header">
             <div class="container">
 
+                <div class="popup-fade">
+                    <div class="popup">
+                        <a class="popup-close" href="#">Закрыть</a>
+                        <form action="#" class="test">
+                            <div class="custom-input">
+                                <label class="label-form" for="what-modal">Что хотим?</label>
+                                <select name="" class="input-form" id="what-modal">
+                                    <option value="" selected disabled>Комод</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="size-model">Знаете размеры?</label>
+                                <select name="" class="input-form" id="size-model">
+                                    <option value="" selected disabled>Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="width">Ширина</label>
+                                <input class="input-form" placeholder="Ширина" type="text" id="width">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form"  for="length">Длина</label>
+                                <input class="input-form" placeholder="Длина" type="text" id="length">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="photo">Прикрепить фото</label>
+                                <input class="input-form" type="file" name="" id="photo" style="display:none;">
+                                <button class="input-form" id="bntUpload" style="text-align: start;">Загрузить фото</button>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <span>Вызвать замерщика</span>
+                            </div>
+                            <div class="custom-input select-color">
+                                <label class="color-label" for="color">Выбрать цвет</label>
+                                <input type="color" value="#B4A7AE" name="" id="color">
+                            </div>
+                            
+                            <input type="submit" value="Оформить" class="btn">
+                        </form>
+                    </div>	
+                </div>
+
                 <div class="logo">
-                    <a href="../../">
-                        <img src="../../images/logo.png" alt="logo">
+                    <a href="#">
+                        <img src="/images/logo.png" alt="logo">
                     </a>
                 </div>
 
@@ -61,11 +103,11 @@
 
                 <div class="contact-block">
                     <div class="info-block">
-                        <a href="https://yandex.ru/maps/-/CCURz6RBWA">
-                            <img src="../../images/icons/home.svg" alt="address">
+                        <a href="https://yandex.ru/maps/-/CCUVINbSSD">
+                            <img src="/images/icons/home.svg" alt="address">
                             <div class="info">
                                 <span class="main-info">
-                                    ул. Тополиная 35
+                                    ул. Дзержинского 38а
                                 </span>
                                 <span class="additionally-info">
                                     Пн - Сб 8:00 - 20:00
@@ -78,7 +120,7 @@
                 <div class="contact-block">
                     <div class="info-block">
                         <a href="tel: +79278921675">
-                            <img src="../../images/icons/phone.svg" alt="phone">
+                            <img src="/images/icons/phone.svg" alt="phone">
                             <div class="info">
                                 <span class="main-info">
                                     +7-927-892-16-75
@@ -92,7 +134,7 @@
                 </div>
 
                 <div class="callback">
-                    <input type="button" value="Заказать звонок" class="btn">
+                    <input type="button" value="Заказать звонок" class="btn popup-open">
                 </div>
 
             </div>
@@ -150,7 +192,7 @@
                         </div>
                     </div>
                     <div class="select-color">
-                        <!-- Решить вопрос -->
+                        <input type="color" value="#B4A7AE">
                     </div>
                     <div class="buy-block">
                         <input class="btn" type="button" value="Купить сейчас">
@@ -276,11 +318,11 @@
                 <div class="contact-section">
                     <div class="contact-block">
                         <div class="info-block">
-                            <a href="https://yandex.ru/maps/-/CCURz6RBWA">
-                                <img src="../../images/icons/home.svg" alt="address">
+                            <a href="https://yandex.ru/maps/-/CCUVINbSSD">
+                                <img src="/images/icons/home.svg" alt="address">
                                 <div class="info">
                                     <span class="main-info">
-                                        ул. Тополиная 35
+                                        ул. Дзержинского 38а
                                     </span>
                                     <span class="additionally-info">
                                         Пн - Сб 8:00 - 20:00
@@ -293,7 +335,7 @@
                     <div class="contact-block">
                         <div class="info-block">
                             <a href="tel: +79278921675">
-                                <img src="../../images/icons/phone.svg" alt="phone">
+                                <img src="/images/icons/phone.svg" alt="phone">
                                 <div class="info">
                                     <span class="main-info">
                                         +7-927-892-16-75
@@ -310,26 +352,18 @@
         <div class="main-footer">
             <div class="container">
                 <div class="logo">
-                    <a href="../../">
-                        <img src="../../images/logo.png" alt="logo">
-                    </a>
+                    <img src="/images/logo.png" alt="logo">
                 </div>
                 <div class="politics">
-                    <a href="../../agreement.html">Политика конфиденциальности</a>
+                    <a href="/agreement.html">Политика конфиденциальности</a>
                     <span>© 2022 | "Белая мебель", Все права защищены</span>
                 </div>
                 <div class="messanger">
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="vk">
-                    </a>
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="whatsapp">
-                    </a>
-                    <a href="#" class="img">
-                        <img src="../../images/icons/vk.svg" alt="telegram">
-                    </a>
+                    <a href="#" class="img"></a>
+                    <a href="#" class="img"></a>
+                    <a href="#" class="img"></a>
                 </div>
-                <a href="#" class="btn">Заказать звонок</a>
+                <a href="#" class="btn popup-open">Заказать звонок</a>
                 <!-- открытие модалки -->
             </div>
         </div>
