@@ -1,0 +1,293 @@
+@media screen and (max-width: 1180px){
+    .btn{
+        font-size: 12px;
+    }
+
+    input{
+        font-size: 12px;
+    }
+
+    .container{
+        width: 900px;
+    }
+
+    header .main-header .contact-block .info-block a .info .main-info{
+        font-size: 12px;
+    }
+
+    .logo a img{
+        width: 148px;
+    }
+
+    header nav .container ul li a{
+        font-size: 12px;
+    }
+
+    main section .container .slick-products .product img{
+        width: 100%;
+        height: 100%;
+    }
+
+    main section .container .slick-products .product .order .price .coast{
+        font-size: 24px;
+    }
+
+    main section .container .slick-products .product .order .price .old-price :first-of-type{
+        font-size: 18px;
+    }
+
+    main section .container .slick-products .product .order .price .old-price :last-of-type{
+        font-size: 14px;
+    }
+    .reviews-dots{
+        top: 455px;
+    }
+
+    main section .container .slider-about .slideshow-container .main{
+        width: 390px;
+    }
+
+    main section .container .slider-about .slideshow-container .next{
+        width: 310px;
+    }
+
+    main section .container .slider-about .slideshow-container{
+        width: 545px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    main section .container .slick-products .product .order .price .coast{
+        font-size: 36px;
+    }
+
+    main section .container .slick-products .product .order .price .old-price :first-of-type{
+        font-size: 16px;
+    }
+    
+    main section .container .slick-products .product .order .price .old-price :last-of-type{
+        font-size: 12px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock img{
+        margin-right: 20px;
+        width: 255px;
+    }
+
+    .info-block{
+        width: 560px;
+    }
+
+    .b-popup-hiden{
+        right: -110%;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .container{
+        width: 700px;
+    }
+
+    main section .container .slick-review .block-review .section-review .text-review{
+        font-size: 14px;
+    }
+
+    .reviews-dots{
+        top: 505px;
+    }
+
+    main section .container .background-calback p{
+        font-size: 16px;
+    }
+
+    .contact-block .info-block{
+        width: auto;
+    }
+
+    main section .container .content img{
+        display: none;
+    }
+
+    main section .container .slick .info-block .info h1{
+        font-size: 36px;
+    }
+
+    main section .container .slick .info-block .info p{
+        font-size: 12px;
+    }
+
+    .block1{
+        display: none;
+    }
+    .block2{
+        display: none;
+    }
+    .block3{
+        display: none;
+    }
+    .block4{
+        display: none;
+    }
+    .block5{
+        display: none;
+    }
+    .block6{
+        display: none;
+    }
+    .block7{
+        display: none;
+    }
+    .block8{
+        display: none;
+    }
+    .block9{
+        display: none;
+    }
+    .block10{
+        display: none;
+    }
+    .block11{
+        display: none;
+    }
+    .block12{
+        display: none;
+    }
+
+    main section .container h2{
+        font-size: 24px;
+    }
+
+    main section .container .about-grid .block h3{
+        font-size: 16px;
+    }
+
+    main section .container .about-grid .block p{
+        font-size: 12px;
+    }
+
+    header nav .container{
+        display: none;
+    }
+
+    .logo a img{
+        display: none;
+    }
+
+    header .main-header .contact-block .info-block a{
+        display: none;
+    }
+
+    .callback{
+        display: none;
+    }
+
+    header .main-header{
+        margin: 0;
+    }
+
+    header .main-header .container{
+        justify-content: flex-start;
+    }
+
+    header .menu{
+        display: block;
+    }
+
+    .b-popup{
+        display: none;
+    }
+
+    main section .container .slick .info-block .img-page{
+        display: none;
+    }
+
+    main section .container .slick .info-block .info{
+        width: 100%;
+        margin: 0;
+    }
+
+    main section .container .slick .info-block .info p{
+        width: auto;
+    }
+
+    main section .container .slick .info-block{
+        height: auto;
+    }
+
+    main section .container .about-grid{
+        gap: 36px 115px;
+    }
+
+    main section .container .slick-products .product .order .price .coast{
+        width: 100%;
+        display: block ruby;
+    }
+
+    main section .container .slick-products .product .order .price .old-price{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock .coast-stock{
+        font-size: 84px;
+    }
+
+    .info-stock{
+        width: 480px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock .coast-stock{
+        width: 100%;
+
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock .description-stock{
+        width: 100%;
+    }
+
+    main section .container .info-about h2{
+        margin-bottom: 36px;
+        line-height: 120%;
+    }
+
+    main section .container .slider-about .slideshow-container{
+        width: 515px;
+    }
+
+    main section .container .slider-about .slideshow-container .main{
+        width: 300px;
+    }
+    main section .container .slider-about .slideshow-container .next{
+        width: 260px;
+    }
+
+    main section .container .slider-about .slideshow-container{
+        width: 472px;
+    }
+
+    main section .container .info-about p{
+        text-align: start;
+    }
+
+    main section .container .info-about{
+        align-items: flex-start;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    footer nav .container .contact-section .contact-block .info-block a{
+        display: none;
+    }
+    
+
+    footer .main-footer .container .logo img{
+        width: 110px;
+    }
+
+    footer .main-footer .container .messanger .img{
+        margin-right: 10px;
+    }
+}
+

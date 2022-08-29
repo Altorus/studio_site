@@ -82,6 +82,10 @@
         }
         /* header */
 
+        header .menu{
+            display: none;
+        }
+
         header nav .container .messanger a:nth-of-type(1){
             background-image: url('/images/icons/messanger/vk_fill.svg');
         }
@@ -908,6 +912,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            background-color: #fff;
         }
         
         main section .container .background-calback h2 {
@@ -1555,6 +1560,7 @@ main .error .block-left span{
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 .block4{
@@ -1563,6 +1569,7 @@ main .error .block-left span{
     height: 516px;
     right: -260px;
     top: 539px;
+    z-index: -1;
 
     background: rgba(206, 45, 79, 0.9);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -1576,6 +1583,7 @@ main .error .block-left span{
     height: 160px;
     left: -90px;
     top: 1321px;
+    z-index: -1;
     
     background: rgba(198, 174, 37, 0.9);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -1588,6 +1596,7 @@ main .error .block-left span{
     height: 67px;
     right: 100px;
     top: 3499px;
+    z-index: -1;
     
     background: rgba(198, 174, 37, 0.9);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -1636,6 +1645,7 @@ main .error .block-left span{
     height: 516px;
     left: -437px;
     top: 3394px;
+    z-index: -1;
     
     background: rgba(206, 45, 79, 0.9);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -1660,6 +1670,7 @@ main .error .block-left span{
     height: 169px;
     left: -100px;
     top: 5085px;
+    z-index: -1;
     
     background: rgba(198, 174, 37, 0.9);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
