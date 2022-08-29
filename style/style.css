@@ -82,12 +82,31 @@
         }
         /* header */
 
-        header nav .container .messanger a{
-            background-image: url('/images/icons/vk.svg');
+        header nav .container .messanger a:nth-of-type(1){
+            background-image: url('/images/icons/messanger/vk_fill.svg');
         }
 
-        header nav .container .messanger a:hover{
-            background-image: none;
+        header nav .container .messanger a:nth-of-type(1):hover{
+            background-image: url('/images/icons/messanger/vk_outline.svg');
+        }
+
+        header nav .container .messanger a:nth-of-type(2){
+            background-image: url('/images/icons/messanger/whatsapp_fill.svg');
+        }
+
+        header nav .container .messanger a:nth-of-type(2):hover{
+            background-image: url('/images/icons/messanger/whatsapp_outline.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header nav .container .messanger a:nth-of-type(3){
+            background-image: url('/images/icons/messanger/telegram_fill.svg');
+        }
+
+        header nav .container .messanger a:nth-of-type(3):hover{
+            background-image: url('/images/icons/messanger/telegram_outline.svg');
+            
         }
         
         header {
@@ -950,6 +969,54 @@
         main section .container .background-calback .messanger a:last-of-type {
             margin-right: 0;
         }
+
+        .img{
+            width: 24px;
+            height: 24px;
+        }
+
+        main section .container .background-calback .messanger {
+            display: flex;
+            align-items: center;
+        }
+        
+        main section .container .background-calback .messanger .img {
+            margin-right: 42px;
+            height: 24px;
+            width: 24px;
+        }
+        
+        main section .container .background-calback .messanger .img:last-of-type {
+            margin-right: 0;
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(1){
+            background-image: url('/images/icons/messanger/vk_fill.svg');
+
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(1):hover{
+            background-image: url('/images/icons/messanger/vk_outline.svg');
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(2){
+            background-image: url('/images/icons/messanger/whatsapp_fill.svg');
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(2):hover{
+            background-image: url('/images/icons/messanger/whatsapp_outline.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(3){
+            background-image: url('/images/icons/messanger/telegram_fill.svg');
+        }
+
+        main section .container .background-calback .messanger a:nth-of-type(3):hover{
+            background-image: url('/images/icons/messanger/telegram_outline.svg');
+            
+        }
         /*  */
         
         main section .container h2 {
@@ -1101,12 +1168,47 @@
             color: var(--black);
         }
         
-        footer .main-footer .container .messanger a {
-            margin-right: 42px;
+        footer .main-footer .container .messanger {
+            display: flex;
+            align-items: center;
         }
         
-        footer .main-footer .container .messanger a:last-of-type {
+        footer .main-footer .container .messanger .img {
+            margin-right: 42px;
+            height: 24px;
+            width: 24px;
+        }
+        
+        footer .main-footer .container .messanger .img:last-of-type {
             margin-right: 0;
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(1){
+            background-image: url('/images/icons/messanger/vk_fill.svg');
+
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(1):hover{
+            background-image: url('/images/icons/messanger/vk_outline.svg');
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(2){
+            background-image: url('/images/icons/messanger/whatsapp_fill.svg');
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(2):hover{
+            background-image: url('/images/icons/messanger/whatsapp_outline.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(3){
+            background-image: url('/images/icons/messanger/telegram_fill.svg');
+        }
+
+        footer .main-footer .container .messanger a:nth-of-type(3):hover{
+            background-image: url('/images/icons/messanger/telegram_outline.svg');
+            
         }
 
         /* Страница контакты */
