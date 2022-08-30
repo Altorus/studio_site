@@ -85,7 +85,7 @@
 
 
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     main .info section h1{
         font-size: 28px;
         line-height: 34px;
@@ -156,16 +156,21 @@
         margin-bottom: 150px;
     }
 
+    .right-section-error{
+        position: relative;
+    }
+
     .block-error2{
-        left: 24vw;
-        top: 105%;
+        transform: rotate(45deg);
+        left: 0;
+        top: -80px;
         width: 63px;
         height: 63px;
     }
 
     .block-error3{
-        left: 40vw;
-        top: 90%;
+        left: 120px;
+        top: -150px;
         width: 101px;
         height: 101px;
     }
