@@ -153,6 +153,19 @@
         display: none;
     }
 
+    .block-info1{
+        display: none;
+    }
+    .block-info2{
+        display: none;
+    }
+    .block-info3{
+        display: none;
+    }
+    .block-info4{
+        display: none;
+    }
+
     main section .container h2{
         font-size: 24px;
     }
@@ -288,6 +301,49 @@
 
     footer .main-footer .container .messanger .img{
         margin-right: 10px;
+    }
+
+    main .info section h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    main .info section h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    main .info section h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    main .info section ol li{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    main .info section ul .mark{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    main .info section p{
+        width: 90vw;
+        font-size: 14px;
+        line-height: 158.9%;
+    }
+
+    main .info section .breadcrumb{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .search-input {
+        width: 196px;
+    }
+
+    main section .container .slick .info-block .info p{
+        width: 90vw;
     }
 }
 
