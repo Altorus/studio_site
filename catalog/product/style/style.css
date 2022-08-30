@@ -1,6 +1,7 @@
 main section .info-product{
     display: flex;
     align-items: center;
+    font-family: 'Montserrat';
 }
 
 main section .container .slick-product{
@@ -86,24 +87,25 @@ main section .container .main-info-product .material-product .feature .feature-r
     line-height: 20px;
 }
 
-main section .container .main-info-product .info-block{
-    display: flex;
-    justify-content: space-between;
+main section .container .main-info-product .grid-info{
+    display: grid;
+    grid-template-areas: 'coast size' 'color color' 'btn link';
+    justify-items: stretch;
     align-items: center;
-    margin-bottom: 30px;
 }
 
-main section .container .main-info-product .info-block .coast-container{
+main section .container .main-info-product .grid-info .coast-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    grid-area: coast;
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast{
+main section .container .main-info-product .grid-info .coast-container .top-coast{
     display: flex;
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast p{
+main section .container .main-info-product .grid-info .coast-container .top-coast p{
     margin-right: 20px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -114,7 +116,7 @@ main section .container .main-info-product .info-block .coast-container .top-coa
     color: rgba(23, 23, 23, 0.64);
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast span{
+main section .container .main-info-product .grid-info .coast-container .top-coast span{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -125,7 +127,7 @@ main section .container .main-info-product .info-block .coast-container .top-coa
     color: rgba(23, 23, 23, 0.64);
 }
 
-main section .container .main-info-product .info-block .coast-container span{
+main section .container .main-info-product .grid-info .coast-container span{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -135,6 +137,7 @@ main section .container .main-info-product .info-block .coast-container span{
 
 main section .container .main-info-product .select-color{
     margin-bottom: 18px;
+    grid-area: color;
 }
 
 main section .container .main-info-product .select-color input{
@@ -148,22 +151,23 @@ main section .container .main-info-product .select-color input:hover{
     cursor: pointer;
 }
 
-main section .container .main-info-product .info-block .size-container{
+main section .container .main-info-product .grid-info .size-container{
     display: flex;
     align-items: center;
+    grid-area: size;
 }
 
-main section .container .main-info-product .info-block .size-container .size{
+main section .container .main-info-product .grid-info .size-container .size{
     display: flex;
     flex-direction: column;
     margin-right: 37px;
 }
 
-main section .container .main-info-product .info-block .size-container .size:last-of-type{
+main section .container .main-info-product .grid-info .size-container .size:last-of-type{
     margin: 0;
 }
 
-main section .container .main-info-product .info-block .size-container .size span:first-of-type{
+main section .container .main-info-product .grid-info .size-container .size span:first-of-type{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -173,7 +177,7 @@ main section .container .main-info-product .info-block .size-container .size spa
     color: rgba(23, 23, 23, 0.64);
     margin-bottom: 6px;
 }
-main section .container .main-info-product .info-block .size-container .size span:last-of-type{
+main section .container .main-info-product .grid-info .size-container .size span:last-of-type{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -181,16 +185,14 @@ main section .container .main-info-product .info-block .size-container .size spa
     line-height: 29px;
 }
 
-main section .container .main-info-product .buy-block{
-    display: flex;
-    align-items: center;
-}
-
-main section .container .main-info-product .buy-block .btn{
+main section .container .main-info-product .btn{
     margin-right: 16px;
+    grid-area: btn;
 }
 
-main section .container .main-info-product .buy-block a{
+main section .container .main-info-product a{
+    grid-area: link;
+    width: 299px;
     color: #C6AE25;
     font-family: 'Geometria';
     font-style: normal;
