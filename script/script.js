@@ -44,9 +44,7 @@ $(document).ready(function() {
             dotsClass: 'products-dots',
         });
     }
-});
 
-$(document).ready(function() {
     if(screen.width <= 480 && screen.width < 810){
         $('.slick-stock').slick({
             autoplay: false,
@@ -146,6 +144,8 @@ $(document).ready(function() {
         $('body').toggleClass('lock')
     })
 
+
+
 });
 
 
@@ -201,6 +201,8 @@ function showSlides(n) {
 $("a.scroll-to").on("click", function(e){
     e.preventDefault();
     var anchor = $(this).attr('href');
+    $('.header-burger, .burger-menu').toggleClass("active")
+    $('body').toggleClass('lock')
     $('html, body').stop().animate({
         scrollTop: $(anchor).offset().top - 60
     }, 800);

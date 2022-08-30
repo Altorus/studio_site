@@ -773,7 +773,8 @@
         }
 
         .burger-menu{
-            display: none;
+            position: absolute;
+            right: -100%;
         }
         
         .reviews-dots li button {
