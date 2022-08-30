@@ -441,8 +441,9 @@
         }
         
         main section .slick-stock .bacground-stock .container-stock .block-stock {
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-areas: 'img coast' 'img text' 'img desc';
+            gap: 30px;
         }
         
         main section .slick-stock .bacground-stock .container-stock .block-stock img {
@@ -450,10 +451,12 @@
             width: 318px;
             height: 353px;
             object-fit: contain;
+            grid-area: img;
         }
         
-        main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock .coast-stock {
+        main section .slick-stock .bacground-stock .container-stock .block-stock .coast-stock {
             font-family: 'Montserrat';
+            grid-area: coast;
             font-style: normal;
             font-weight: 700;
             font-size: 100px;
@@ -462,18 +465,20 @@
             color: var(--pink);
         }
         
-        main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock span {
+        main section .slick-stock .bacground-stock .container-stock .block-stock span {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 163.98%;
             color: var(--black);
+            grid-area: text;
         }
         
-        main section .slick-stock .bacground-stock .container-stock .block-stock .info-stock .description-stock {
+        main section .slick-stock .bacground-stock .container-stock .block-stock .description-stock {
             font-family: 'Montserrat';
             font-style: normal;
+            grid-area: desc;
             font-weight: 500;
             font-size: 14px;
             line-height: 163.98%;

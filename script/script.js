@@ -8,6 +8,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+
     if(screen.width > 810){
         $('.slick-products').slick({
             dots: true,
@@ -19,7 +20,8 @@ $(document).ready(function() {
             dotsClass: 'products-dots',
         });
     }
-    else if(screen.width <=810){
+
+    if(screen.width <= 810 && screen.width >= 479){
         $('.slick-products').slick({
             dots: true,
             arrows: false,
@@ -30,18 +32,41 @@ $(document).ready(function() {
             dotsClass: 'products-dots',
         });
     }
+
+    if(screen.width <= 480 && screen.width < 810){
+        $('.slick-products').slick({
+            dots: true,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dotsClass: 'products-dots',
+        });
+    }
 });
 
 $(document).ready(function() {
-    $('.slick-stock').slick({
-        prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
-        nextArrow: '<button type = "button" class = "next-stock"></ button> ',
-        autoplay: false,
-        autoplaySpeed: 3000,
-        dots: true,
-        dotsClass: 'products-dots',
-        fade: true,
-    });
+    if(screen.width <= 480 && screen.width < 810){
+        $('.slick-stock').slick({
+            autoplay: false,
+            arrows: false,
+            autoplaySpeed: 3000,
+            dots: true,
+            dotsClass: 'products-dots',
+            fade: true,
+        });
+    }else{
+        $('.slick-stock').slick({
+            prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
+            nextArrow: '<button type = "button" class = "next-stock"></ button> ',
+            autoplay: false,
+            autoplaySpeed: 3000,
+            dots: true,
+            dotsClass: 'products-dots',
+            fade: true,
+        });
+    }
 });
 
 $(document).ready(function() {
@@ -115,6 +140,11 @@ $(document).ready(function() {
     $('#bntUpload').click(function(){
         $("#photo").click();
     });
+
+    $('.header-burger').click(()=>{
+        $('.header-burger, .burger-menu').toggleClass("active")
+        $('body').toggleClass('lock')
+    })
 
 });
 
