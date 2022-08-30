@@ -87,16 +87,18 @@ main section .container .main-info-product .material-product .feature .feature-r
 }
 
 main section .container .main-info-product .info-block{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 'coast size' 'color color' 'btn link';
+    align-self: stretch;
     align-items: center;
-    margin-bottom: 30px;
+    grid-row-gap: 18px;
 }
 
 main section .container .main-info-product .info-block .coast-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    grid-area: coast;
 }
 
 main section .container .main-info-product .info-block .coast-container .top-coast{
@@ -133,14 +135,11 @@ main section .container .main-info-product .info-block .coast-container span{
     line-height: 32px;
 }
 
-main section .container .main-info-product .select-color{
-    margin-bottom: 18px;
-}
-
 main section .container .main-info-product .select-color input{
     width: 26px;
     height: 26px;
     border: none;
+    grid-area: color;
 }
 
 main section .container .main-info-product .select-color input:hover{
@@ -150,7 +149,8 @@ main section .container .main-info-product .select-color input:hover{
 
 main section .container .main-info-product .info-block .size-container{
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    grid-area: size;
 }
 
 main section .container .main-info-product .info-block .size-container .size{
@@ -181,16 +181,17 @@ main section .container .main-info-product .info-block .size-container .size spa
     line-height: 29px;
 }
 
-main section .container .main-info-product .buy-block{
-    display: flex;
-    align-items: center;
-}
 
-main section .container .main-info-product .buy-block .btn{
+main section .container .main-info-product .btn{
     margin-right: 16px;
+    grid-area: btn;
 }
 
-main section .container .main-info-product .buy-block a{
+.link-a{
+    grid-area: link;
+}
+
+main section .container .main-info-product .link-a a{
     color: #C6AE25;
     font-family: 'Geometria';
     font-style: normal;
@@ -448,12 +449,12 @@ main section .slick-stock .slick-arrow.slick-prev {
     cursor: pointer;
 }
 
-.select-color input{
+.select-color.product input{
     border: none;
     outline: none;
     width: 26px;
     height: 26px;
-    margin-bottom: 18px;
+    margin: 0;
 }
 
 .select-color input:hover{

@@ -7,6 +7,12 @@
 }
 
 @media screen and (max-width: 1180px){
+
+    /* Карточка товара */
+    main section .container .main-info-product .material-product .feature .feature-left{
+        width: 79%;
+    }
+    /* главная */
     .btn{
         font-size: 12px;
     }
@@ -842,5 +848,45 @@
     main section .slick-stock .bacground-stock .container-stock .block-stock .description-stock{
         margin-top: -36px;   
     }
+
+    main section .container .background-calback p{
+        font-size: 14px;
+    }
+
+    main section .container .background-calback{
+        padding: 34px 10px;
+    }
+
+    .reviews-dots{
+        top: 485px;
+    }
+
+    main section .container .slider-about .slideshow-container{
+        width: 352px;
+    }
+
+    main section .container .slider-about .slideshow-container .next{
+        left: 91px;
+        top: 109px;
+    }
 }
 
+@media screen and (max-width:375px) {
+
+    main section .container .slick .info-block .info h1{
+        width: 90vw;
+    }
+    
+    .container{
+        width: 350px;
+    }
+
+    
+
+   
+
+    main section .container h2{
+        width: 100%;
+        text-align: center;
+    }
+}
