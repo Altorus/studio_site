@@ -8,6 +8,9 @@
 
 @media screen and (max-width: 1180px){
 
+    body{
+        overflow-x: hidden;
+    }
     /* Карточка товара */
     main section .container .main-info-product .material-product .feature .feature-left{
         width: 79%;
@@ -83,6 +86,8 @@
 
     main section .container .slider-about .slideshow-container .next{
         width: 310px;
+        top: 109px;
+        left: 161px;
     }
 
     main section .container .slider-about .slideshow-container{
@@ -91,6 +96,9 @@
 }
 
 @media screen and (max-width: 960px){
+    body{
+        overflow-x: hidden;
+    }
 
     main section .container .info-about{
         padding-left: 10px;
@@ -102,7 +110,7 @@
 
     main section .slick-stock .bacground-stock .container-stock .block-stock .coast-stock{
         position: absolute;
-        left: 20%;
+        left: 29%;
         top: 180px;
         font-size: 50px;
     }
@@ -163,6 +171,14 @@
 
 @media screen and (max-width: 810px){
 
+    main section .container h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
 
     footer .main-footer .container .btn{
         display: none;
@@ -789,6 +805,24 @@
 }
 
 @media screen and (max-width:480px) {
+
+    main section .container .slick-product{
+        width: 370px;
+        height: auto;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock h2{
+        padding-left: 10px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    main section .container h2{
+        width: 100%;
+    text-align: center;
+    }
     .container{
         width: 370px;
     }
@@ -902,24 +936,10 @@
         left: 91px;
         top: 109px;
     }
-}
 
-@media screen and (max-width:375px) {
-
-    .slick-dots{
-        top: 330px;
-    }
-
-    main section .container .slick-product{
-        width: 100%;
-        height: auto;
-    }
-    main section .container .slick .info-block .info h1{
-        width: 90vw;
-    }
     
-    .container{
-        width: 350px;
+    main section .description-container .more-block{
+        flex-direction: column;
     }
 
     main section .description-container .more-block .description-block p{
@@ -928,13 +948,32 @@
         margin-bottom: 36px;
     }    
 
-    main section .description-container .more-block{
-        flex-direction: column;
-    }
 
     main section .description-container .more-block .description-block{
         max-width: 100%;
     }
+}
+
+@media screen and (max-width:390px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .slick-dots{
+        top: 330px;
+    }
+
+
+    main section .container .slick .info-block .info h1{
+        width: 90vw;
+    }
+    
+    .container{
+        width: 350px;
+    }
+
+
    
 
     main section .container h2{

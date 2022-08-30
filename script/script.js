@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.slick').slick({
         dots: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
     });
@@ -13,7 +13,7 @@ $(document).ready(function() {
         $('.slick-products').slick({
             dots: true,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -25,7 +25,7 @@ $(document).ready(function() {
         $('.slick-products').slick({
             dots: true,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -37,7 +37,7 @@ $(document).ready(function() {
         $('.slick-products').slick({
             dots: true,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     if(screen.width <= 480 && screen.width < 810){
         $('.slick-stock').slick({
-            autoplay: false,
+            autoplay: true,
             arrows: false,
             autoplaySpeed: 3000,
             dots: true,
@@ -58,7 +58,7 @@ $(document).ready(function() {
         $('.slick-stock').slick({
             prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
             nextArrow: '<button type = "button" class = "next-stock"></ button> ',
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             dots: true,
             dotsClass: 'products-dots',
@@ -71,7 +71,7 @@ $(document).ready(function() {
     $('.slick-review').slick({
         dots: true,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         dotsClass: 'reviews-dots',
     });
@@ -81,7 +81,7 @@ $(document).ready(function() {
     $('.slick-product').slick({
         dots: true,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         dotsClass: 'products-dots',
     });
@@ -90,7 +90,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.slick-more-products').slick({
         dots: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -143,6 +143,16 @@ $(document).ready(function() {
         $('.header-burger, .burger-menu').toggleClass("active")
         $('body').toggleClass('lock')
     })
+
+    $("a.scroll-to").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('.header-burger, .burger-menu').toggleClass("active")
+        $('body').toggleClass('lock')
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
 
 
 
@@ -197,14 +207,4 @@ function showSlides(n) {
 
     //   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
-
-$("a.scroll-to").on("click", function(e){
-    e.preventDefault();
-    var anchor = $(this).attr('href');
-    $('.header-burger, .burger-menu').toggleClass("active")
-    $('body').toggleClass('lock')
-    $('html, body').stop().animate({
-        scrollTop: $(anchor).offset().top - 60
-    }, 800);
-});
 
