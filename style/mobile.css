@@ -164,6 +164,10 @@
 @media screen and (max-width: 810px){
 
 
+    footer .main-footer .container .btn{
+        display: none;
+    }
+
     main section .about{
         flex-direction: column-reverse;
     }
@@ -434,10 +438,6 @@
         display: none;
     }
 
-    footer .main-footer .container a{
-        display: none;
-    }
-
     footer .main-footer .container{
         flex-direction: column;
     }
@@ -664,11 +664,6 @@
 
     footer nav .container .contact-section .contact-block .info-block a{
         display: none;
-    }
-    
-
-    footer .main-footer .container .logo img{
-        width: 110px;
     }
 
     footer .main-footer .container .messanger .img{
@@ -910,6 +905,10 @@
 }
 
 @media screen and (max-width:375px) {
+
+    .slick-dots{
+        top: 330px;
+    }
 
     main section .container .slick-product{
         width: 100%;
