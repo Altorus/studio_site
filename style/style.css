@@ -771,6 +771,10 @@
             padding: 0;
             cursor: pointer;
         }
+
+        .burger-menu{
+            display: none;
+        }
         
         .reviews-dots li button {
             font-size: 0;

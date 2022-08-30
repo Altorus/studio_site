@@ -322,8 +322,8 @@ main section .container .slick-more-products a .product .name {
 
 main section .container .slick-more-products a .product img {
     object-fit: cover;
-    width: 281px;
-    height: 211px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 24px;
 }
 

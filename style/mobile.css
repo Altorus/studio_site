@@ -12,6 +12,19 @@
     main section .container .main-info-product .material-product .feature .feature-left{
         width: 79%;
     }
+
+    main section .container .main-info-product .info-block{
+        grid-template-areas: 'coast coast' 'size size' 'color color' 'btn link';
+    }
+
+    main section .container .main-info-product .info-block .size-container{
+        justify-content: flex-start;
+    }
+
+    main section .container .slick-more-products a .product .order .price .coast{
+        font-size: 24px;
+        line-height: 120%;
+    }
     /* главная */
     .btn{
         font-size: 12px;
@@ -44,14 +57,17 @@
 
     main section .container .slick-products .product .order .price .coast{
         font-size: 24px;
+        margin: 0;
     }
 
     main section .container .slick-products .product .order .price .old-price :first-of-type{
         font-size: 18px;
+        margin-right: 4px;
     }
 
     main section .container .slick-products .product .order .price .old-price :last-of-type{
         font-size: 14px;
+        margin-right: 6px;
     }
     .reviews-dots{
         top: 455px;
@@ -102,7 +118,7 @@
     }
 
     main section .container .slick-products .product .order .price .old-price :first-of-type{
-        font-size: 16px;
+        font-size: 16px
     }
     
     main section .container .slick-products .product .order .price .old-price :last-of-type{
