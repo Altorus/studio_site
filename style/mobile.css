@@ -83,6 +83,93 @@
     }
 }
 
+
+
+@media screen and (max-width: 760px){
+    main .info section h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    main .info section h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    main .info section h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    main .info section ol li{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    main .info section ul .mark{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    main .info section p{
+        width: 90vw;
+        font-size: 14px;
+        line-height: 158.9%;
+    }
+
+    main .info section .breadcrumb{
+        display: none;
+    }
+    /* 404 */
+    main .error .block-left h2{
+        font-size: 100px;
+        line-height: 122px;
+    }
+
+    main .error .block-left p{
+        font-size: 24px;
+        line-height: 29px;
+        width: 90vw;
+    }
+
+    main .error .block-left span{
+        font-size: 24px;
+        line-height: 29px;
+        width: 90vw;
+    }
+
+    main .error{
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+
+    .block-right span{
+        font-size: 80px;
+    line-height: 98px;
+    }
+
+    .block-right.deco{
+        width: 202px;
+        height: 202px;
+    }
+    
+    main .error .block-left{
+        margin-bottom: 150px;
+    }
+
+    .block-error2{
+        left: 24vw;
+        top: 105%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .block-error3{
+        left: 40vw;
+        top: 90%;
+        width: 101px;
+        height: 101px;
+    }
+}
 @media screen and (max-width: 810px){
     .container{
         width: 700px;
@@ -114,6 +201,10 @@
 
     main section .container .slick .info-block .info p{
         font-size: 12px;
+    }
+
+    .block-error1{
+        display: none;
     }
 
     .block1{
@@ -301,39 +392,6 @@
 
     footer .main-footer .container .messanger .img{
         margin-right: 10px;
-    }
-
-    main .info section h1{
-        font-size: 28px;
-        line-height: 34px;
-    }
-    main .info section h2{
-        font-size: 24px;
-        line-height: 29px;
-    }
-    main .info section h3{
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    main .info section ol li{
-        font-size: 14px;
-        line-height: 17px;
-    }
-
-    main .info section ul .mark{
-        font-size: 14px;
-        line-height: 17px;
-    }
-
-    main .info section p{
-        width: 90vw;
-        font-size: 14px;
-        line-height: 158.9%;
-    }
-
-    main .info section .breadcrumb{
-        display: none;
     }
 }
 
