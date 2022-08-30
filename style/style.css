@@ -443,7 +443,6 @@
         main section .slick-stock .bacground-stock .container-stock .block-stock {
             display: grid;
             grid-template-areas: 'img coast' 'img text' 'img desc';
-            gap: 30px;
         }
         
         main section .slick-stock .bacground-stock .container-stock .block-stock img {
@@ -567,10 +566,17 @@
         
         main section .container .info-about h2 {
             margin-bottom: 64px;
+            text-align: end;
+            font-size: 36px;
+            line-height: 44px;
+
+            /* identical to box height */
+            letter-spacing: 0.105em;
         }
         
         main section .container .info-about p {
             text-align: end;
+            width: 90%;
         }
         
         main section .container .info-about p:first-of-type {
@@ -601,7 +607,7 @@
         main section .container .slider-about .slideshow-container .mySlides img {
             object-fit: cover;
             width: 394px;
-            height: 338px;
+            /* height: 338px; */
             border-radius: 10px;
 
         }

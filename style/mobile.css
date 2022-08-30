@@ -65,6 +65,32 @@
 }
 
 @media screen and (max-width: 960px){
+
+    main section .container .info-about{
+        padding-left: 10px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock{
+        position: relative;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .coast-stock{
+        position: absolute;
+        left: 20%;
+        top: 180px;
+        font-size: 50px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .description-stock{
+        width: 90%;
+        padding-left: 10px;
+        width: 90vw;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock span{
+        padding-left: 10px;
+    }
+
     main section .container .slick-products .product .order .price .coast{
         font-size: 36px;
     }
@@ -92,9 +118,31 @@
 }
 
 @media screen and (max-width: 810px){
+
+    main section .about{
+        flex-direction: column-reverse;
+    }
+
+    main section .container .info-about h2{
+        font-size: 24px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock{
+        grid-template-areas: 'img' 'text' 'desc';
+        gap: 16px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .description-stock{
+        margin: 0;
+        padding-bottom: 18px;
+    }
     main .info section h1{
         font-size: 28px;
         line-height: 34px;
+    }
+
+    main .container .breadcrumb{
+        display: none;
     }
     main .info section h2{
         font-size: 24px;
@@ -229,6 +277,7 @@
         display: grid;
         row-gap: 36px;
         grid-template-areas: 'size size' 'color color' 'proce btn' 'link link';
+        grid-template-columns:200px 100px
     }
 
     main section .container .main-info-product .grid-info .info-block .size-container{
@@ -351,10 +400,16 @@
 
     main section .container .slick-review .block-review .section-review .text-review{
         font-size: 14px;
+        width: 90%;
+    }
+
+    main section .container .background-form{
+        width: auto;    
     }
 
     .reviews-dots{
-        top: 505px;
+        top: 305px;
+        left: 35%;
     }
 
     main section .container .background-calback p{
@@ -511,6 +566,28 @@
     main section .container .info-about h2{
         margin-bottom: 36px;
         line-height: 120%;
+        text-align: center;
+        width: 100%;
+    }
+
+    main section .container .info-about .btn{
+        margin-bottom: 36px;
+    }
+
+    main section .container .slider-about .slideshow-container .next{
+        height: auto;
+    }
+
+    main section .container .slider-about .slideshow-container .main{
+        height: auto;
+    }
+
+    main section .container .slider-about .slideshow-container {
+        height: 391px;
+    }
+
+    main section .container .slick-review .block-review .img-profile{
+        display: none;
     }
 
     main section .container .slider-about .slideshow-container{
@@ -534,6 +611,7 @@
 
     main section .container .info-about{
         align-items: flex-start;
+        width: 90vw;
     }
 
     footer{
@@ -723,10 +801,6 @@
         grid-template-areas: text;
     }
 
-    main section .about{
-        flex-direction: column-reverse;
-    }
-
     main section .container .slider-about .slideshow-container{
         margin-right: 0;
         margin-top: 36px;
@@ -759,6 +833,14 @@
     
     main section .container .background-form form .custom-checkbox:last-of-type{
         width: auto;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock span{
+        margin-top: -50px;
+    }
+
+    main section .slick-stock .bacground-stock .container-stock .block-stock .description-stock{
+        margin-top: -36px;   
     }
 }
 
