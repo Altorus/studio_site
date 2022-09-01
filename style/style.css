@@ -146,13 +146,19 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
-            color: var(--black);
             border-radius: 10px;
             padding: 5px 15px;
             transition: .1s;
         }
         
         header nav .container ul li a:hover {
+            background-color: var(--pink);
+            color: var(--white);
+            border-radius: 10px;
+            transition: .1s;
+        }
+
+        .active-page {
             background-color: var(--pink);
             color: var(--white);
             border-radius: 10px;
