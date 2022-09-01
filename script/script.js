@@ -188,6 +188,10 @@ function currentSlide(n) {
     showSlides(slideIndex = n - 1);
 }
 
+$('.mySlides').click(()=>{
+    showSlides()
+})
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");

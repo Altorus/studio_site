@@ -632,7 +632,8 @@
             top: 0;
             left: 0;
             transition: .3s;
-        }
+            pointer-events: none;
+        } 
         
         main section .container .slider-about .slideshow-container .next {
             position: absolute;
@@ -643,6 +644,7 @@
             height: 338px;
             transition: .3s ease-in-out;
             opacity: 1;
+            cursor: pointer;
         }
         
         main section .container .slider-about .slideshow-container .hidden {
