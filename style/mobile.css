@@ -342,10 +342,21 @@
 
     main section .container .main-info-product .info-block{
         display: grid;
-        grid-template-areas: 'size size' 'color color' 'coast btn' 'link link';
+        grid-template-areas: 'size size' 'form form' 'coast coast';
         width: 100%;
         justify-items: center;
     } 
+
+    .info-grid{
+        grid-area: form;
+        display: grid;
+        align-self: stretch;
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 18px;
+        width: 100%;
+        grid-template-areas: 'color color' 'text text' 'btn link';
+    }
 
     main section .description-container .more-block .description-block{
         max-width: 50vw;

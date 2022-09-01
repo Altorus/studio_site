@@ -173,6 +173,12 @@ $(document).ready(function() {
         }, 800);
     });
 
+    $('input[name="color"]').click(()=>{
+        var value = $('input[name="color"]:checked').val();
+        console.log(value);
+    })
+    
+
 
 
 });
@@ -224,10 +230,7 @@ function showSlides(n) {
     slides[slideIndex - 1].classList.remove('next')
     slides[slideIndex - 1].classList.add('main')
     dots[slideIndex - 1].className += " active";
-
-
-
-
     //   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
 

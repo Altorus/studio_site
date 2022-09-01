@@ -127,10 +127,24 @@ main section .container .main-info-product .material-product .feature .feature-r
 
 main section .container .main-info-product .info-block{
     display: grid;
-    grid-template-areas: 'coast size' 'color color' 'btn link';
+    grid-template-areas: 'coast size' 'form form';
     align-self: stretch;
     align-items: center;
     grid-row-gap: 18px;
+}
+
+.info-grid{
+    grid-area: form;
+    display: grid;
+    align-self: stretch;
+    align-items: center;
+    grid-row-gap: 18px;
+    width: 100%;
+    grid-template-areas: 'color color' 'text text' 'btn link';
+}
+
+main section .container .main-info-product .info-block form p{
+    grid-area: text;
 }
 
 main section .container .main-info-product .info-block .coast-container{
@@ -178,11 +192,17 @@ main section .container .main-info-product .info-block .coast-container span{
     grid-area: color;
 }
 
-main section .container .main-info-product .info-block .select-color input{
+main section .container .main-info-product .info-block form .select-color input{
+    opacity: 0; 
+    margin-right: 18px;
+    position: relative;
+}
+main section .container .main-info-product .info-block form .select-color label{
+    position: absolute;
     width: 26px;
     height: 26px;
     border: none;
-
+    background-image: url('/images/icons/close.svg');
 }
 
 main section .container .main-info-product .select-color input:hover{
