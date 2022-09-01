@@ -1,3 +1,42 @@
+main .breadcrumb{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* main .container  .breadcrumb li{
+    margin-right: 10px;
+} */
+
+
+main .breadcrumb li a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(23, 23, 23, 0.55);
+}
+
+main .breadcrumb li a::after{
+    content: '/';
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(23, 23, 23, 0.55);
+}
+
+main .breadcrumb .active{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 main section .info-product{
     display: flex;
     align-items: center;

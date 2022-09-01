@@ -84,6 +84,7 @@ main .container .catalog .product img {
 main .container .catalog .product .order {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 main .container .catalog .product .order .price .coast {
