@@ -120,6 +120,14 @@
             position: relative;
             background-color: var(--white);
         }
+
+        .header_fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 21;
+          }
         
         header nav .container {
             display: flex;
@@ -235,6 +243,11 @@
             font-size: 15px;
             line-height: 19px;
             color: var(--black);
+        }
+
+        header .main-header .contact-block .info-block a .info .main-info:hover{
+            color: var(--pink);
+            transition: all .3s;
         }
         
         header .main-header .contact-block .info-block a .info .additionally-info {
