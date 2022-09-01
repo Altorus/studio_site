@@ -171,6 +171,11 @@
 
 @media screen and (max-width: 810px){
 
+    .sub-menu > li{
+        padding: 0;
+    }
+    
+
     main section .container h2{
         width: 100%;
         text-align: center;

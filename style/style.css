@@ -112,7 +112,52 @@
             background-image: url('/images/icons/messanger/telegram_outline.svg');
             
         }
+        /*  */
+        header nav .container ul li:nth-of-type(1){
+            position: relative;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header nav .container ul li:nth-of-type(1):hover .sub-menu{
+            display: block;
+            padding: 20px 0 20px 20px;
+            background-color: #fff;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .sub-menu{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            color: var(--black);
+            /* border-radius: 10px; */
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            padding: 20px 0 0 0 ;
+            min-width: 500px;
+            z-index: 10;
+        }
+
+        .sub-menu.open
+
+        .sub-menu>li{
+            background-color: var(--white);
+            padding: 0 0 10px 10px;
+        }
+
+        .sub-menu-link  {
+            display: inline-block;
+        } 
+
         
+
+        .sub-menu li:last-of-type{
+            margin: 0;
+        }
+        /*  */
+
+
         header {
             /* z-index: 5; */
             padding: 25px;
@@ -137,7 +182,7 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.26);
         }
         
-        header nav .container ul {
+        header nav .container .menu-ul {
             display: flex;
         }
         
@@ -150,12 +195,43 @@
             padding: 5px 15px;
             transition: .1s;
         }
+
+        .menu-arrow{
+
+        }
+
+        .arrow{
+            position: absolute;
+            right: 0;
+            top: 3px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #000;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+
+        body.mouse header nav .container ul li a {
+            margin-right: 38px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            border-radius: 10px;
+            padding: 5px 15px;
+            transition: .1s;
+        }
         
-        header nav .container ul li a:hover {
+        body.mouse header nav .container ul li a:hover {
             background-color: var(--pink);
             color: var(--white);
             border-radius: 10px;
             transition: .1s;
+        }
+
+        body.touch .sub-menu.open{
+            display: block;
+            background-color: var(--white);
+            padding-bottom: 20px;
         }
 
         .active-page {
