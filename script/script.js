@@ -167,7 +167,7 @@ $(document).ready(function() {
         e.preventDefault();
         var anchor = $(this).attr('href');
         $('.header-burger, .burger-menu').toggleClass("active")
-        $('body').toggleClass('lock')
+        // $('body').toggleClass('lock')
         $('html, body').stop().animate({
             scrollTop: $(anchor).offset().top - 60
         }, 800);
