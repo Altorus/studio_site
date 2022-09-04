@@ -215,56 +215,6 @@ switch (page) {
         break;
 }
 
-
-let slideIndex = 0;
-showSlides();
-
-function currentSlide(n) {
-    showSlides(slideIndex = n - 1);
-}
-
-$('.mySlides').click(()=>{
-    showSlides()
-})
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-
-
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('main');
-        slides[i].classList.add('hidden');
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-
-    slides[slideIndex - 1].classList.remove('hidden')
-
-    if (slideIndex == slides.length) {
-        slides[0].classList.remove('hidden')
-        slides[0].classList.add('next')
-    } else {
-        slides[slideIndex].classList.remove('hidden')
-        slides[slideIndex].classList.add('next')
-    }
-
-    slides[slideIndex - 1].classList.remove('next')
-    slides[slideIndex - 1].classList.add('main')
-    dots[slideIndex - 1].className += " active";
-    //   setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-
-
-
-
 let isMobile = {
 	Android: function() {return navigator.userAgent.match(/Android/i);},
 	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
@@ -273,7 +223,9 @@ let isMobile = {
 	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
-		let body=document.querySelector('body');
+
+let body=document.querySelector('body');
+
 if(isMobile.any()){
 		body.classList.add('touch');
 		let arrow=document.querySelectorAll('.arrow');
@@ -291,4 +243,3 @@ if(isMobile.any()){
 }else{
 	body.classList.add('mouse');
 }
-     
