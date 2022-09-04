@@ -770,8 +770,16 @@ main section .container .main-info-product .select-color input:hover{
             border-radius: 10px;
 
         }
-        
-        main section .container .slider-about .slideshow-container .main {
+        main section .container .slider-about .slideshow-container .prewSlides{
+            width: 499px;
+            height: 435px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+
+        main section .container .slider-about .slideshow-container .main{
             width: 499px;
             height: 435px;
             position: absolute;

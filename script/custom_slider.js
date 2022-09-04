@@ -1,48 +1,17 @@
-let slideIndex = 0;
-showSlides();
+let slideIndex = 1;
+showSlides(slideIndex);
 
 function currentSlide(n) {
     showSlides(slideIndex = n - 1);
 }
 
 $('.mySlides').click(()=>{
-    prewSlides()
+    showSlides(slideIndex+=1)
 })
 
-function prewSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length}
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('main');
-        slides[i].classList.add('hidden');
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slideIndex++;
-    if (slideIndex > slides.length-2) { slideIndex = 0 }
-
-    slides[slideIndex + 1].classList.remove('hidden')
-
-    if (slideIndex == slides.length) {
-        slides[0].classList.remove('hidden')
-        slides[0].classList.add('next')
-    } else {
-        slides[slideIndex].classList.remove('hidden')
-        slides[slideIndex].classList.add('next')
-    }
-    console.log(slideIndex);
-
-    slides[slideIndex + 1].classList.remove('next')
-    slides[slideIndex + 1].classList.add('main')
-    dots[slideIndex + 1].className += " active";
-}
+$('.prewSlides').click(()=>{
+    showSlides(slideIndex-=1)
+})
 
 function showSlides(n) {
     let i;
@@ -60,7 +29,6 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
 
     slides[slideIndex - 1].classList.remove('hidden')
