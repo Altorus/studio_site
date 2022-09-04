@@ -185,31 +185,28 @@ $(document).ready(function() {
 
 
 let page = window.location.pathname
-let pageActive = 
 console.log(window.location.pathname);
 
 switch (page) {
     case '/catalog/product/':
-        
-
         $('.page')[4].classList.add('active-page')
+        $('.page')[8].classList.add('active-page')
         $('.page')[0].classList.add('active-page')
         break;
     case '/catalog/':
-        
-
         $('.page')[4].classList.add('active-page')
+        $('.page')[8].classList.add('active-page')
         $('.page')[0].classList.add('active-page')
         break;
     case '/contact.html':
         $('.page')[6].classList.add('active-page')
         $('.page')[2].classList.add('active-page')
-        pageActive.classList.add('active-page')
+        $('.page')[10].classList.add('active-page')
         break;
     case '/review.html':
         $('.page')[7].classList.add('active-page')
+        $('.page')[11].classList.add('active-page')
         $('.page')[3].classList.add('active-page')
-        pageActive.classList.add('active-page')
         break;
     default:
         break;

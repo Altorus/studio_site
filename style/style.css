@@ -22,6 +22,13 @@ main section .container .main-info-product .info-block form .select-color label:
     width: 100vw;
 }
 
+main section .container .main-info-product .info-block form .select-color label:last-of-type:hover::before{
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+}
+
 
 main section .container .main-info-product .info-block form .select-color label:nth-last-of-type(5){
     position: absolute;
@@ -391,7 +398,10 @@ main section .container .main-info-product .select-color input:hover{
             color: var(--black);
         }
 
-        header .main-header .contact-block .info-block a .info .main-info:hover{
+        header .main-header .contact-block .info-block a .info .main-info:hover,
+        main section .container .background-calback .contact-block .info-block a .info .main-info:hover,
+        footer nav .container .contact-section .contact-block .info-block a .info .main-info:hover,
+        main section .container .contact-container .contact-section .contact-block .info-block a .info .main-info:hover{
             color: var(--pink);
             transition: all .3s;
         }
@@ -1271,7 +1281,6 @@ main section .container .main-info-product .select-color input:hover{
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
-            color: var(--black);
             border-radius: 10px;
             padding: 5px 15px;
             transition: .1s;
@@ -1486,11 +1495,18 @@ main section .container .main-info-product .select-color input:hover{
             margin-bottom: 14px;
         }
 
+        .contact-container{
+            position: relative;
+            z-index: 3;
+        }
+
         main section .container .requisites-section .requisites{
+            position: relative;
             display: grid;
             grid-column-gap: 100px;
             grid-row-gap: 38px;
             grid-template-areas: "a b" "c d";
+            z-index: 3;
         }
 
         main section .container .requisites-section .requisites p:nth-of-type(1){
@@ -2189,7 +2205,6 @@ form .custom-input .label-form {
     padding: 5px;
     background: #fff;
     border-radius: 12px;
-    opacity: .8;
     left: 20px;
     top: -15px;
     z-index: 2;
@@ -2267,11 +2282,16 @@ form .select-color label::before{
     color: black;
 }
 
+form .select-color label:last-of-type:hover::before{
+    display: block;
+    position: absolute;
+    top: -0px;
+    width: 100px;
+}
 form .select-color label:hover::before{
     display: block;
     position: absolute;
     top: -20px;
-    width: 100%;
     width: 100vw;
 }
 
