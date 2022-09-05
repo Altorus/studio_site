@@ -845,7 +845,7 @@ main section .container .main-info-product .select-color input:hover{
         
         .fade {
             animation-name: fade;
-            animation-duration: 1s;
+            animation-duration: 1.5s;
         }
         
         @keyframes fade {
@@ -1724,6 +1724,10 @@ main .error .block-left span{
 
 /* Декоративные элементы */
 
+.container.error{
+    position: relative;
+}
+
 .block1{
     left: 114px;
     top: 644px;
@@ -1999,8 +2003,8 @@ main .error .block-left span{
     position: absolute;
     width: 126px;
     height: 126px;
-    left: 1123px;
-    top: 173px;
+    right: 20px;
+    top: -180px;
     z-index: -1;
     
     background: #C6AE25;
@@ -2013,8 +2017,8 @@ main .error .block-left span{
     position: absolute;
     width: 200px;
     height: 200px;
-    right: 408px;
-    top: -10px;
+    right: 200px;
+    top: -290px;
     z-index: -1;
     
     background: #C6AE25;

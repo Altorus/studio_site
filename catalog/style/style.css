@@ -76,7 +76,7 @@ main .container .catalog .product .name {
 
 main .container .catalog .product img {
     object-fit: cover;
-    width: 281px;
+    width: 271px;
     height: 211px;
     margin-bottom: 24px;
 }
