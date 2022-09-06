@@ -1004,4 +1004,14 @@
         text-align: center;
     }
 
+    .block-error2{
+        left: 200px;
+        top: 310px;
+    }
+
+    .block-error3{
+        left: 80px;
+        top: 230px;
+    }
+
 }
