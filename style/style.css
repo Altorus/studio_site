@@ -14,6 +14,8 @@ main section .container .main-info-product .info-block form .select-color label:
     color: black;
 }
 
+a
+
 main section .container .main-info-product .info-block form .select-color label:hover::before{
     display: block;
     position: absolute;
@@ -255,6 +257,11 @@ main section .container .main-info-product .select-color input:hover{
         
         header nav .container .menu-ul {
             display: flex;
+        }
+
+        header nav .container ul{
+            background-color: #fff;
+            z-index: 10;
         }
         
         header nav .container ul li a {

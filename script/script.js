@@ -178,7 +178,9 @@ $(document).ready(function() {
         console.log(value);
     })
     
-
+    $("#menu").click(function() { // Тут класс твоей кнопки
+        $('.sub-menu').slideToggle(300);  // Тут класс твоего меню, предварительно оно "display:none"
+      });
 
 
 });
@@ -221,22 +223,14 @@ let isMobile = {
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
 
-let body=document.querySelector('body');
+// let body=document.querySelector('body');
 
-if(isMobile.any()){
-		body.classList.add('touch');
-		let arrow=document.querySelectorAll('.arrow');
-	for(i=0; i<arrow.length; i++){
-			let thisLink=arrow[i].previousElementSibling;
-			let subMenu=arrow[i].nextElementSibling;
-			let thisArrow=arrow[i];
+// if(isMobile.any()){
+// 		body.classList.add('touch');
+// 		let arrow=document.querySelectorAll('.arrow');
+//         let menu = document.querySelectorAll('#menu');
 
-			thisLink.classList.add('parent');
-		arrow[i].addEventListener('click', function(){
-			subMenu.classList.toggle('open');
-			thisArrow.classList.toggle('active');
-		});
-	}
-}else{
-	body.classList.add('mouse');
-}
+
+// }else{
+// 	body.classList.add('mouse');
+// }
