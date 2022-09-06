@@ -824,6 +824,10 @@
 
 @media screen and (max-width:480px) {
 
+    header nav .container ul li:nth-of-type(1):hover .sub-menu{
+        display: none;
+    }
+
     main section .container .slider-about .slideshow-container .prewSlides{
         width: 350px;
     }

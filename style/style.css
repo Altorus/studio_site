@@ -274,10 +274,6 @@ main section .container .main-info-product .select-color input:hover{
             transition: .1s;
         }
 
-        .menu-arrow{
-
-        }
-
         .arrow{
             position: absolute;
             right: 0;
