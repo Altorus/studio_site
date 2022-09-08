@@ -2389,7 +2389,22 @@ main .error .block-left span {
   z-index: 9999;
   display: none;
 }
+.popup-fade-review {
+  z-index: 9999;
+  display: none;
+}
 .popup-fade:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+.popup-fade-review:before {
   content: "";
   background: #000;
   position: fixed;
@@ -2773,4 +2788,17 @@ form .select-color label:nth-last-of-type(1) {
   animation: rota 4s infinite normal;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+/* рейтинг */
+.popup .review-form .review-section .custom-input{
+  display: block;
+}
+
+
+.custom-input.rating {
+  overflow: hidden;
+}
+.custom-input.rating:not(:checked) > input {
+	display: none;
 }

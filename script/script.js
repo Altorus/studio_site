@@ -177,31 +177,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#bntUpload").click(function () {
-    $("#photo").click();
-  });
-
-  $(".header-burger").click(() => {
-    $(".header-burger, .burger-menu").toggleClass("active");
-    $("body").toggleClass("lock");
-  });
-
-  $("a.scroll-to").on("click", function (e) {
-    e.preventDefault();
-    var anchor = $(this).attr("href");
-    $(".header-burger, .burger-menu").toggleClass("active");
-    // $('body').toggleClass('lock')
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor).offset().top - 60,
-        },
-        800
-      );
-  });
-
-  // pop up review
+  // pop up отзывы
 
   $(".close").click(() => {
     $(".b-popup").toggleClass("b-popup-hiden");
@@ -214,27 +190,29 @@ $(document).ready(function () {
   }
 
   $(".popup-open-review").click(function () {
-    $("#popup-fade-review").fadeIn();
+    $(".popup-fade-review").fadeIn();
     return false;
   });
 
   $(".popup-close").click(function () {
-    $(this).parents("#popup-fade-review").fadeOut();
+    $(this).parents(".popup-fade-review").fadeOut();
     return false;
   });
 
   $(document).keydown(function (e) {
     if (e.keyCode === 27) {
       e.stopPropagation();
-      $("#popup-fade-review").fadeOut();
+      $(".popup-fade-review").fadeOut();
     }
   });
 
-  $("#popup-fade-review").click(function (e) {
+  $(".popup-fade-review").click(function (e) {
     if ($(e.target).closest(".popup").length == 0) {
       $(this).fadeOut();
     }
   });
+
+  //
 
   $("#bntUpload").click(function () {
     $("#photo").click();
