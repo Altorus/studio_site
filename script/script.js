@@ -105,30 +105,30 @@ $(document).ready(function () {
   });
 });
 
-  $(".slick-img-review").slick({
-    dots: true,
-    arrows: false,
-    // autoplay: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplaySpeed: 3000,
-    dotsClass: "products-dots",
-    responsive: [
-      {
-        breakpoint: 811,
-        settings: {
-          slidesToShow: 2,
-        },
+$(".slick-img-review").slick({
+  dots: true,
+  arrows: false,
+  // autoplay: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplaySpeed: 3000,
+  dotsClass: "products-dots",
+  responsive: [
+    {
+      breakpoint: 811,
+      settings: {
+        slidesToShow: 2,
       },
-      {
-        breakpoint: 481,
-        settings: {
-          slidesToShow: 1,
-        },
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
       },
-    ],
-  });
+    },
+  ],
+});
 
 $(document).ready(function () {
   $(".slick-more-products").slick({
@@ -201,6 +201,65 @@ $(document).ready(function () {
       );
   });
 
+  // pop up review
+
+  $(".close").click(() => {
+    $(".b-popup").toggleClass("b-popup-hiden");
+  });
+  setTimeout(() => popupBlock(), 2000);
+  setInterval(() => popupBlock(), 300000);
+
+  function popupBlock() {
+    $(".b-popup").removeClass("b-popup-hiden");
+  }
+
+  $(".popup-open-review").click(function () {
+    $("#popup-fade-review").fadeIn();
+    return false;
+  });
+
+  $(".popup-close").click(function () {
+    $(this).parents("#popup-fade-review").fadeOut();
+    return false;
+  });
+
+  $(document).keydown(function (e) {
+    if (e.keyCode === 27) {
+      e.stopPropagation();
+      $("#popup-fade-review").fadeOut();
+    }
+  });
+
+  $("#popup-fade-review").click(function (e) {
+    if ($(e.target).closest(".popup").length == 0) {
+      $(this).fadeOut();
+    }
+  });
+
+  $("#bntUpload").click(function () {
+    $("#photo").click();
+  });
+
+  $(".header-burger").click(() => {
+    $(".header-burger, .burger-menu").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $(".header-burger, .burger-menu").toggleClass("active");
+    // $('body').toggleClass('lock')
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 60,
+        },
+        800
+      );
+  });
+
   $('input[name="color"]').click(() => {
     var value = $('input[name="color"]:checked').val();
     console.log(value);
@@ -209,6 +268,36 @@ $(document).ready(function () {
   $("#menu").click(function () {
     // Тут класс твоей кнопки
     $(".sub-menu").slideToggle(300); // Тут класс твоего меню, предварительно оно "display:none"
+  });
+
+  // Увеличение
+
+  $(function () {
+    $(".minimized").click(function (event) {
+      var i_path = $(this).children().attr("src");
+      $("body").append(
+        '<div id="overlay"></div><div id="magnify"><img src="' +
+          i_path +
+          '"><div id="close-popup"><i></i></div></div>'
+      );
+      function leftTop() {
+        $("#magnify").css({
+          top: ($(window).height() - $("#magnify").outerHeight()) / 2,
+        });
+      }
+      $(window).resize(function () {
+        leftTop();
+      });
+      leftTop();
+      $("#overlay, #magnify").fadeIn("fast");
+    });
+
+    $("body").on("click", "#close-popup, #overlay", function (event) {
+      event.preventDefault();
+      $("#overlay, #magnify").fadeOut("fast", function () {
+        $("#close-popup, #magnify, #overlay").remove();
+      });
+    });
   });
 });
 

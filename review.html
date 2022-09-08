@@ -132,6 +132,65 @@
                     </div>
                 </div>
 
+                <!-- Отзыв -->
+                <div class="popup-fade" id="popup-fade-review">
+                    <div class="popup">
+                        <a class="popup-close" href="#">Закрыть</a>
+                        <form action="#" class="test">
+                            <div class="custom-input">
+                                <label class="label-form" for="what-modal">Что хasотим?</label>
+                                <select name="" class="input-form" id="what-modal">
+                                    <option value="" selected disabled>Комод</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="size-model">Знаете размеры?</label>
+                                <select name="" class="input-form" id="size-model">
+                                    <option value="" selected disabled>Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="width">Ширина</label>
+                                <input class="input-form" placeholder="Ширина" type="text" id="width">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="length">Длина</label>
+                                <input class="input-form" placeholder="Длина" type="text" id="length">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="photo">Прикрепить фото</label>
+                                <input class="input-form" type="file" name="" id="photo" style="display:none;">
+                                <button class="input-form" id="bntUpload" style="text-align: start;">Загрузить
+                                    фото</button>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <span>Вызвать замерщика</span>
+                            </div>
+                            <div class="select-color product">
+                                <label for="venge" data-title="Венге"></label>
+                                <input type="radio" name="color" value="Венге" id="venge">
+                                <label for="dub" data-title="Дуб Сонома"></label>
+                                <input type="radio" name="color" value="Дуб Сонома" id="dub">
+                                <label for="yasen" data-title="Ясень шимо светлый"></label>
+                                <input type="radio" name="color" value="Ясень шимо светлый" id="yasen">
+                                <label for="white" data-title="Белый"></label>
+                                <input type="radio" name="color" value="Белый" id="white">
+                                <label for="whiteWood" data-title="Выбеленое дерево"></label>
+                                <input type="radio" name="color" value="Выбеленое дерево" id="whiteWood">
+                            </div>
+                            <p class="annatation">Полная палитра в офисах продаж</p>
+
+                            <input type="submit" value="Оформить" class="btn">
+                        </form>
+                    </div>
+                </div>
+
                 <div class="logo">
                     <a href="/">
                         <img src="/images/logo.png" alt="logo">
@@ -198,7 +257,7 @@
             <div class="container review">
                 <div class="review-header">
                     <h1>Отзывы</h1>
-                    <a href="" class="btn popup-open">Оставить отзыв</a>
+                    <a href="" class="btn popup-open-review">Оставить отзыв</a>
                 </div>
                 <div class="review-section">
                     <div class="review-block">
@@ -224,23 +283,35 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="slick-img-review">
-                                    <div class="test"><img class="img-review" src="/images/furniture/green_sofa.jpg" alt=""></div>
-                                    <div class="test"><img class="img-review" src="/images/furniture/green_sofa.jpg" alt=""></div>
-                                    <div class="test"><img class="img-review" src="/images/furniture/green_sofa.jpg" alt=""></div>
-                                    <div class="test"><img class="img-review" src="/images/furniture/green_sofa.jpg" alt=""></div>
+                                <div class="slick-img-review ">
+                                    <div class="test minimized"><img class="img-review"
+                                            src="/images/furniture/green_sofa.jpg" alt=""></div>
+                                    <div class="test minimized"><img class="img-review"
+                                            src="/images/furniture/cheir.jpg" alt=""></div>
+                                    <div class="test minimized"><img class="img-review"
+                                            src="/images/furniture/green_sofa.jpg" alt=""></div>
+                                    <div class="test minimized"><img class="img-review"
+                                            src="/images/furniture/green_sofa.jpg" alt=""></div>
                                 </div>
                             </div>
                             <p>Значимость этих проблем настолько очевидна, что новая модель организационной деятельности
-                                влечет за собой процесс внедрения и модернизации существенных финансовых и административных
-                                условий. Значимость этих проблем настолько.Значимость этих проблем настолько очевидна, что
-                                новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
+                                влечет за собой процесс внедрения и модернизации существенных финансовых и
+                                административных
+                                условий. Значимость этих проблем настолько.Значимость этих проблем настолько очевидна,
+                                что
+                                новая модель организационной деятельности влечет за собой процесс внедрения и
+                                модернизации
                                 существенных финансовых и административных условий. Значимость этих проблем настолько
-                                Значимость этих проблем настолько очевидна, что новая модель организационной деятельности
-                                влечет за собой процесс внедрения и модернизации существенных финансовых и административных
-                                условий. Значимость этих проблем настолько Значимость этих проблем настолько очевидна, что
-                                новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
-                                существенных финансовых и административных условий. Значимость этих проблем настолько </p>
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности
+                                влечет за собой процесс внедрения и модернизации существенных финансовых и
+                                административных
+                                условий. Значимость этих проблем настолько Значимость этих проблем настолько очевидна,
+                                что
+                                новая модель организационной деятельности влечет за собой процесс внедрения и
+                                модернизации
+                                существенных финансовых и административных условий. Значимость этих проблем настолько
+                            </p>
                         </div>
                     </div>
                 </div>
