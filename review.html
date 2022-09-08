@@ -134,39 +134,54 @@
 
                 <!-- Отзыв -->
                 <div class="popup-fade-review">
-                    <div class="popup">
+                    <div class="popup review">
                         <a class="popup-close" href="#">Закрыть</a>
                         <form action="#" class="review-form">
-                            <div class="review-section">
-                                <h2>Общая оценка</h2>
-                                <div class="custom-input rating">
-                                    <input type="radio" name="rating" id="rating" value="1">
-                                    <input type="radio" name="rating" id="rating" value="2">
-                                    <input type="radio" name="rating" id="rating" value="3">
-                                    <input type="radio" name="rating" id="rating" value="4">
-                                    <input type="radio" name="rating" id="rating" value="5">
+                            <div>
+                                <div class="review-section">
+                                    <h2>Общая оценка</h2>
+                                    <div class="custom-input rating">
+                                        <label for="ratingOne" class="rating-label"></label>
+                                        <input type="radio" name="rating" id="ratingOne" value="1">
+                                        <label for="ratingTwo" class="rating-label"></label>
+                                        <input type="radio" name="rating" id="ratingTwo" value="2">
+                                        <label for="ratingThree" class="rating-label"></label>
+                                        <input type="radio" name="rating" id="ratingThree" value="3">
+                                        <label for="ratingFour" class="rating-label"></label>
+                                        <input type="radio" name="rating" id="ratingFour" value="4">
+                                        <label for="ratingFive" class="rating-label"></label>
+                                        <input type="radio" name="rating" id="ratingFive" value="5">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="review-section">
-                                <h2>Расскажите подробнее</h2>
-                                <div class="custom-input">
-                                    <label class="label-form" for="pluses">Достоинства</label>
-                                    <input class="input-form" placeholder="Что вам понравилось" type="text" id="pluses">
+                                <div class="review-section">
+                                    <h2>Расскажите подробнее</h2>
+                                    <div class="inputs">
+                                        <div class="custom-input">
+                                            <label class="label-form" for="pluses">Достоинства</label>
+                                            <textarea class="input-form" placeholder="Что вам понравилось" type="text" id="pluses" cols="30"
+                                                rows="5"></textarea>
+                                        </div>
+                                        <div class="custom-input">
+                                            <label class="label-form" for="minuses">Недостатки</label>
+                                            <textarea class="input-form" placeholder="Что не понравилось" type="text" id="minuses" cols=" 30"
+                                                rows="5"></textarea>
+                                        </div>
+                                        <div class="custom-input">
+                                            <label class="label-form" for="comment">Коментарии</label>
+                                            <textarea class="input-form" placeholder="Другие впечатления" type="text" id="comment" cols=" 30"
+                                                rows="5"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="custom-input">
-                                    <label class="label-form" for="minuses">Недостатки</label>
-                                    <input class="input-form" placeholder="Что не понравилось" type="text" id="minuses">
-                                </div>
-                                <div class="custom-input">
-                                    <label class="label-form" for="comment">Коментарии</label>
-                                    <textarea name="comment" id="comment" placeholder="Другие впечатления" cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
-                            <div class="review-section">
-                                <h2>Добавьте фото</h2>
-                                <div class="custom-input">
-                                    <label class="label-form file" for="pluses"><span>Нажмите на ссылку</span>, чтобы выбрать фотографии или просто перетащите их сюда</label>
-                                    <input class="input-form file" placeholder="Что вам понравилось" type="text" id="pluses">
+                                <div class="review-section">
+                                    <h2>Добавьте фото</h2>
+                                    <div class="custom-input file">
+                                        <label class="label-form file">
+                                            <input type="file" class="input-form file" name="file">
+                                            <p><span>Нажмите на ссылку</span>, чтобы выбрать фотографии или просто перетащите их сюда</p>
+                                        </label>
+                                
+                                    </div>
                                 </div>
                             </div>
                             <input type="submit" value="Оставить отзыв" class="btn">

@@ -2393,6 +2393,10 @@ main .error .block-left span {
   z-index: 9999;
   display: none;
 }
+.popup-fade-order {
+  z-index: 9999;
+  display: none;
+}
 .popup-fade:before {
   content: "";
   background: #000;
@@ -2405,6 +2409,18 @@ main .error .block-left span {
   z-index: 9999;
 }
 .popup-fade-review:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup-fade-order:before {
   content: "";
   background: #000;
   position: fixed;
@@ -2432,9 +2448,6 @@ main .error .block-left span {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-.popup form {
 }
 
 form .custom-input .input-form {
@@ -2480,11 +2493,14 @@ form .custom-checkbox input {
   margin-bottom: 18px;
 }
 
-.popup form .custom-input:nth-of-type(5) button:hover {
+.popup form .custom-input .cloud-label {
+  display: block;
+}
+.popup form .custom-input .cloud-label:hover {
   cursor: pointer;
 }
 
-.popup form .custom-input:nth-of-type(5) button::after {
+.popup form .custom-input .cloud-label::after {
   content: "";
   right: 10px;
   background-image: url("/images/icons/cloud.svg");
@@ -2791,14 +2807,139 @@ form .select-color label:nth-last-of-type(1) {
 }
 
 /* рейтинг */
-.popup .review-form .review-section .custom-input{
+/* .popup .review-form .review-section .custom-input{
+  display: block;
+} */
+
+.popup.review {
+  width: 80vw;
+}
+
+.popup {
+  transform: translateX(-50%);
+  margin: 0;
+  top: 10%;
+}
+
+.popup .review-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.popup .review-section .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popup .review-section h2 {
+  margin-right: 50px;
+  min-width: 264px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.popup .review-section .custom-input:last-of-type {
+  margin: 0;
+}
+
+.popup .review-section .custom-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.popup .review-section .custom-input.rating {
+  display: block;
+}
+.popup .review-section .custom-input textarea {
+  resize: none;
+  width: 100%;
+}
+
+.review-section .custom-input .input-form {
+  max-width: none;
+}
+
+.custom-input.file {
+  width: 100%;
+}
+
+.review-section .custom-input .input-form.file {
+  display: none;
+}
+
+.review-section .custom-input .label-form.file {
+  padding: 47px 25px;
+  width: 100%;
+  color: var(--black);
+  /* color: transparent; */
+  border: 1px solid #c6ae25;
+  outline: none;
+  border-radius: 11px;
+  background: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
   display: block;
 }
 
-
-.custom-input.rating {
-  overflow: hidden;
+.review-section .custom-input .label-form.file p {
+  position: relative;
+  width: 70%;
+  padding-left: 60px;
+  margin-left: 40px;
 }
-.custom-input.rating:not(:checked) > input {
-	display: none;
+
+.review-section .custom-input .label-form.file p::before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/icons/add-photo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.review-section .custom-input .label-form.file p span {
+  color: var(--pink);
+  position: relative;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* рейтинг */
+
+.custom-input.rating input {
+  position: relative;
+  margin-left: 20px;
+  opacity: 0;
+}
+.custom-input.rating label::before {
+  content: "★";
+  color: #c6c6c6;
+  font-size: 43px;
+  width: 43px;
+  height: 43px;
+  top: -10px;
+  position: absolute;
+}
+
+.custom-input.rating label.select::before {
+  content: "★";
+  color: #c6ae25;
+}
+
+.recall-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recall-form h2 {
+  margin-bottom: 30px;
 }

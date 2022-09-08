@@ -7,6 +7,12 @@ $(document).ready(function () {
   });
 });
 
+// загрузка фото
+$(".label-form input[type=file]").on("change", function () {
+  let file = this.files[0];
+  $(this).closest(".input-file").find(".input-file-text").html(file.name);
+});
+
 $(function () {
   let header = $("header");
   let hederHeight = header.height(); // вычисляем высоту шапки
@@ -213,6 +219,42 @@ $(document).ready(function () {
   });
 
   //
+  // pop up заказа
+
+  $(".close").click(() => {
+    $(".b-popup").toggleClass("b-popup-hiden");
+  });
+  setTimeout(() => popupBlock(), 2000);
+  setInterval(() => popupBlock(), 300000);
+
+  function popupBlock() {
+    $(".b-popup").removeClass("b-popup-hiden");
+  }
+
+  $(".popup-open-order").click(function () {
+    $(".popup-fade-order").fadeIn();
+    return false;
+  });
+
+  $(".popup-close").click(function () {
+    $(this).parents(".popup-fade-order").fadeOut();
+    return false;
+  });
+
+  $(document).keydown(function (e) {
+    if (e.keyCode === 27) {
+      e.stopPropagation();
+      $(".popup-fade-order").fadeOut();
+    }
+  });
+
+  $(".popup-fade-order").click(function (e) {
+    if ($(e.target).closest(".popup").length == 0) {
+      $(this).fadeOut();
+    }
+  });
+
+  //
 
   $("#bntUpload").click(function () {
     $("#photo").click();
@@ -238,9 +280,19 @@ $(document).ready(function () {
       );
   });
 
+  // рейтинг
+  // Получение значения рейтинга по клику
+  $("input[name=rating]").click(function () {
+    let value = $('input[name="rating"]:checked').val();
+    let labels = $(".rating-label");
+
+    for (let i = 0; i < value; i++) {
+      labels.eq(i).addClass("select");
+    }
+  });
+
   $('input[name="color"]').click(() => {
     var value = $('input[name="color"]:checked').val();
-    console.log(value);
   });
 
   $("#menu").click(function () {

@@ -107,8 +107,8 @@
                             <div class="custom-input">
                                 <label class="label-form" for="photo">Прикрепить фото</label>
                                 <input class="input-form" type="file" name="" id="photo" style="display:none;">
-                                <button class="input-form" id="bntUpload" style="text-align: start;">Загрузить
-                                    фото</button>
+                                <label class="input-form" id="bntUpload" style="text-align: start;">Загрузить
+                                    фото</label>
                             </div>
                             <div class="custom-checkbox">
                                 <input type="checkbox" name="" id="">
@@ -129,6 +129,27 @@
                             <p class="annatation">Полная палитра в офисах продаж</p>
 
                             <input type="submit" value="Оформить" class="btn">
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="popup-fade-order">
+                    <div class="popup">
+                        <a class="popup-close" href="#">Закрыть</a>
+                        <form action="#" class="recall-form">
+                            <h2>Форма заявки</h2>
+                            <div class="custom-input">
+                                <label class="label-form" for="width">Имя</label>
+                                <input class="input-form" placeholder="Ваше имя" type="text" id="width">
+                            </div>
+                            <div class="custom-input">
+                                <label class="label-form" for="length">Номер телефона</label>
+                                <input class="input-form" placeholder="Номер телефона" type="phone" id="phone">
+                            </div>
+
+
+                            <input type="submit" value="Заказать" class="btn">
                         </form>
                     </div>
                 </div>
@@ -267,7 +288,7 @@
                                 <input type="radio" name="color" value="Выбеленое дерево" id="whiteWood">
                             </div>
                             <p>Полная палитра в офисах продаж</p>
-                            <input class="btn" type="button" value="Купить сейчас">
+                            <input class="btn popup-open-order" type="button" value="Купить сейчас">
                             <div class="link-a">
                                 <a href="#" class="popup-open">Заказать по индивидуальным размерам</a>
                             </div>
