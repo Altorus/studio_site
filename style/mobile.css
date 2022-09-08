@@ -114,6 +114,29 @@
   main section .container .slider-about .slideshow-container {
     width: 545px;
   }
+
+  .review-block .avatar {
+    width: 170px;
+    height: 170px;
+  }
+
+  .content-review {
+    width: 75%;
+  }
+
+  .content-review-block .left-block .stars img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .content-review .slick-img-review {
+    width: 365px;
+  }
+
+  .review-block .avatar {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1094,11 +1117,59 @@
   main section .description-container .more-block .description-block {
     max-width: 100%;
   }
+
+  .content-review .content-review-block {
+    flex-direction: column;
+  }
+
+  .content-review-block .left-block {
+    margin-bottom: 30px;
+  }
+
+  .content-review .slick-img-review {
+    height: auto;
+    width: 330px;
+  }
+
+  .review-block .avatar {
+    height: 80px;
+    width: 80px;
+  }
+
+  .content-review p {
+    font-size: 14px;
+  }
+
+  .content-review .info-person span:first-of-type {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 390px) {
+  .content-review p {
+    font-size: 12px;
+  }
+
+  .review-block .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
   body {
     overflow-x: hidden;
+  }
+
+  .review-header {
+    flex-direction: column;
+  }
+
+  .content-review .slick-img-review {
+    height: auto;
+    width: 260px;
+  }
+
+  .review-header h1 {
+    margin-bottom: 18px;
   }
 
   .slick-dots {

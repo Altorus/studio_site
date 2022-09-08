@@ -105,6 +105,31 @@ $(document).ready(function () {
   });
 });
 
+  $(".slick-img-review").slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    dotsClass: "products-dots",
+    responsive: [
+      {
+        breakpoint: 811,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
 $(document).ready(function () {
   $(".slick-more-products").slick({
     dots: true,
