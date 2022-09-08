@@ -1,507 +1,634 @@
-main .breadcrumb{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-bottom: 40px;
+main .breadcrumb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 /* main .container  .breadcrumb li{
     margin-right: 10px;
 } */
 
-
-main .breadcrumb li a{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(23, 23, 23, 0.55);
+main .breadcrumb li a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(23, 23, 23, 0.55);
 }
 
-main .breadcrumb li a::after{
-    content: '/';
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(23, 23, 23, 0.55);
+main .breadcrumb li a::after {
+  content: "/";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(23, 23, 23, 0.55);
 }
 
-main .breadcrumb .active{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+main .breadcrumb .active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-main section .info-product{
-    display: flex;
-    align-items: center;
+main section .info-product {
+  display: flex;
+  align-items: center;
 }
 
-main section .container .slick-product{
-    margin-right: 60px;
-    width: 571px;
-    height: 430px;
+main section .container .slick-product {
+  margin-right: 60px;
+  width: 571px;
+  height: 430px;
 }
 
-main section .container .slick-product .img-product{
-    object-fit: cover;
-    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+main section .container .slick-product .img-product {
+  object-fit: cover;
+  filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
 }
 
-main section .container .main-info-product{
-    display: flex;
-    flex-direction: column;
+main section .container .main-info-product {
+  display: flex;
+  flex-direction: column;
 }
 
-main section .container .main-info-product h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
+main section .container .main-info-product h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
 }
 
-main section .container .main-info-product .material-product{
-    padding: 15px 20px;
-    background: rgba(217, 217, 217, 0.33);
-    border-radius: 10px;
-    margin-bottom: 30px;
+main section .container .main-info-product .material-product {
+  padding: 15px 20px;
+  background: rgba(217, 217, 217, 0.33);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-main section .container .main-info-product .material-product .feature{
-    margin: 0;
-    padding: 0;
-
+main section .container .main-info-product .material-product .feature {
+  margin: 0;
+  padding: 0;
 }
 
-main section .container .main-info-product .material-product .feature li{
-    margin-bottom: 20px;
+main section .container .main-info-product .material-product .feature li {
+  margin-bottom: 20px;
 }
-main section .container .main-info-product .material-product .feature li:last-of-type{
-    margin-bottom: 0;
-}
-
-main section .container .main-info-product .material-product .feature .feature-left{
-	margin-right: -10%;
-	width: 89%;
-	vertical-align: top;
-	overflow: hidden;
-	display: inline-block;
-	letter-spacing: normal;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: rgba(23, 23, 23, 0.64);
+main
+  section
+  .container
+  .main-info-product
+  .material-product
+  .feature
+  li:last-of-type {
+  margin-bottom: 0;
 }
 
-main section .container .main-info-product .material-product .feature .feature-left:after {
-	content: '';
-	display: inline-block;
-	width: 99%;
-	margin: 0 -99% 0 3px;
-	vertical-align: baseline;
-	border-bottom: 1px dashed rgba(23, 23, 23, 0.44);   
+main
+  section
+  .container
+  .main-info-product
+  .material-product
+  .feature
+  .feature-left {
+  margin-right: -10%;
+  width: 89%;
+  vertical-align: top;
+  overflow: hidden;
+  display: inline-block;
+  letter-spacing: normal;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(23, 23, 23, 0.64);
 }
 
-main section .container .main-info-product .material-product .feature .feature-right {
-    display: inline-block;
-	letter-spacing: normal;
-	padding-left: 3px;
-	margin-left: 10%;
-	width: 10%;
-	vertical-align: bottom;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+main
+  section
+  .container
+  .main-info-product
+  .material-product
+  .feature
+  .feature-left:after {
+  content: "";
+  display: inline-block;
+  width: 99%;
+  margin: 0 -99% 0 3px;
+  vertical-align: baseline;
+  border-bottom: 1px dashed rgba(23, 23, 23, 0.44);
 }
 
-main section .container .main-info-product .info-block{
-    display: grid;
-    grid-template-areas: 'coast size' 'form form';
-    align-self: stretch;
-    align-items: center;
-    grid-row-gap: 18px;
+main
+  section
+  .container
+  .main-info-product
+  .material-product
+  .feature
+  .feature-right {
+  display: inline-block;
+  letter-spacing: normal;
+  padding-left: 3px;
+  margin-left: 10%;
+  width: 10%;
+  vertical-align: bottom;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.info-grid{
-    grid-area: form;
-    display: grid;
-    align-self: stretch;
-    align-items: center;
-    grid-row-gap: 18px;
-    width: 100%;
-    grid-template-areas: 'color color' 'text text' 'btn link';
+main section .container .main-info-product .info-block {
+  display: grid;
+  grid-template-areas: "coast size" "form form";
+  align-self: stretch;
+  align-items: center;
+  grid-row-gap: 18px;
 }
 
-main section .container .main-info-product .info-block form p{
-    grid-area: text;
+.info-grid {
+  grid-area: form;
+  display: grid;
+  align-self: stretch;
+  align-items: center;
+  grid-row-gap: 18px;
+  width: 100%;
+  grid-template-areas: "color color" "text text" "btn link";
 }
 
-main section .container .main-info-product .info-block .coast-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    grid-area: coast;
+main section .container .main-info-product .info-block form p {
+  grid-area: text;
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast{
-    display: flex;
+main section .container .main-info-product .info-block .coast-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: coast;
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast p{
-    margin-right: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: rgba(23, 23, 23, 0.64);
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .coast-container
+  .top-coast {
+  display: flex;
 }
 
-main section .container .main-info-product .info-block .coast-container .top-coast span{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration-line: line-through;
-    
-    color: rgba(23, 23, 23, 0.64);
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .coast-container
+  .top-coast
+  p {
+  margin-right: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(23, 23, 23, 0.64);
 }
 
-main section .container .main-info-product .info-block .coast-container span{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .coast-container
+  .top-coast
+  span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+
+  color: rgba(23, 23, 23, 0.64);
 }
 
-.select-color.product{
-    grid-area: color;
+main section .container .main-info-product .info-block .coast-container span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
 }
 
-main section .container .main-info-product .info-block .size-container{
-    display: flex;
-    justify-content: flex-end;
-    grid-area: size;
+.select-color.product {
+  grid-area: color;
 }
 
-main section .container .main-info-product .info-block .size-container .size{
-    display: flex;
-    flex-direction: column;
-    margin-right: 37px;
+main section .container .main-info-product .info-block .size-container {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: size;
 }
 
-main section .container .main-info-product .info-block .size-container .size:last-of-type{
-    margin: 0;
+main section .container .main-info-product .info-block .size-container .size {
+  display: flex;
+  flex-direction: column;
+  margin-right: 37px;
 }
 
-main section .container .main-info-product .info-block .size-container .size span:first-of-type{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: rgba(23, 23, 23, 0.64);
-    margin-bottom: 6px;
-}
-main section .container .main-info-product .info-block .size-container .size span:last-of-type{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .size-container
+  .size:last-of-type {
+  margin: 0;
 }
 
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .size-container
+  .size
+  span:first-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 
-main section .container .main-info-product .btn{
-    margin-right: 16px;
-    grid-area: btn;
+  color: rgba(23, 23, 23, 0.64);
+  margin-bottom: 6px;
+}
+main
+  section
+  .container
+  .main-info-product
+  .info-block
+  .size-container
+  .size
+  span:last-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
-.link-a{
-    grid-area: link;
+main section .container .main-info-product .btn {
+  margin-right: 16px;
+  grid-area: btn;
 }
 
-main section .container .main-info-product .link-a a{
-    color: #C6AE25;
-    font-family: 'Geometria';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    border-bottom: 1px dashed #C6AE25;
-    text-align: center;
+.link-a {
+  grid-area: link;
+}
+
+main section .container .main-info-product .link-a a {
+  color: #c6ae25;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px dashed #c6ae25;
+  text-align: center;
 }
 
 /*  */
 
-main section .description-container h2{
-    margin-bottom: 40px;
+main section .description-container h2 {
+  margin-bottom: 40px;
 }
 
-main section .description-container .more-block{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
+main section .description-container .more-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-main section .description-container .more-block .description-block{
-    max-width: 500px;
+main section .description-container .more-block .description-block {
+  max-width: 500px;
 }
 
-main section .description-container .more-block .description-block h3{
-    margin-bottom: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+main section .description-container .more-block .description-block h3 {
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 }
 
-main section .description-container .more-block .description-block p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 158.9%;
+main section .description-container .more-block .description-block p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 158.9%;
 }
 
-main section .description-container .more-block .characteristics-block{
-    max-width: 500px;
+main section .description-container .more-block .characteristics-block {
+  max-width: 500px;
 }
 
-main section .description-container .more-block .characteristics-block h3{
-    margin-bottom: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+main section .description-container .more-block .characteristics-block h3 {
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 }
 
-main section .description-container .more-block .characteristics-block .characteristic{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 23px;
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 23px;
 }
 
-main section .description-container .more-block .characteristics-block .characteristic:last-of-type{
-    margin: 0;
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic:last-of-type {
+  margin: 0;
 }
 
-main section .description-container .more-block .characteristics-block .characteristic span{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 3px;
-    color: rgba(23, 23, 23, 0.64);
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic
+  span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 3px;
+  color: rgba(23, 23, 23, 0.64);
 }
 
-main section .description-container .more-block .characteristics-block .characteristic a{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic
+  a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 
-    color: #C6AE25;
+  color: #c6ae25;
 }
 
-main section .description-container .more-block .characteristics-block .characteristic .color{
-    display: flex;
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic
+  .color {
+  display: flex;
 }
 
-main section .description-container .more-block .characteristics-block .characteristic .color a{
-    margin-right: 24px;
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic
+  .color
+  a {
+  margin-right: 24px;
 }
-main section .description-container .more-block .characteristics-block .characteristic .color a:last-of-type{
-    margin: 0; 
+main
+  section
+  .description-container
+  .more-block
+  .characteristics-block
+  .characteristic
+  .color
+  a:last-of-type {
+  margin: 0;
 }
 
-
-main section .container h2{
-    margin-bottom: 30px;
+main section .container h2 {
+  margin-bottom: 30px;
 }
 
 main section .container .slick-more-products a .product {
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-    background-color: var(--white);
-    border-radius: 10px;
-    padding: 32px 27px;
-    margin: 20px 16px 20px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 32px 27px;
+  margin: 20px 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 main section .container .slick-more-products a .product .name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 145.9%;
-    letter-spacing: 0.035em;
-    color: #383030;
-    margin-bottom: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145.9%;
+  letter-spacing: 0.035em;
+  color: #383030;
+  margin-bottom: 24px;
 }
 
 main section .container .slick-more-products a .product img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 24px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
 }
 
 main section .container .slick-more-products a .product .order {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main section .container .slick-more-products a .product .order .price .coast {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    margin-right: 20px;
-    letter-spacing: 0.105em;
-    color: #383030;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  margin-right: 20px;
+  letter-spacing: 0.105em;
+  color: #383030;
 }
 
-main section .container .slick-more-products a .product .order .price .old-price :first-of-type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.105em;
-    text-decoration-line: line-through;
-    margin-right: 10px;
-    color: #383030;
+main
+  section
+  .container
+  .slick-more-products
+  a
+  .product
+  .order
+  .price
+  .old-price
+  :first-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.105em;
+  text-decoration-line: line-through;
+  margin-right: 10px;
+  color: #383030;
 }
 
-main section .container .slick-more-products a .product .order .price .old-price :last-of-type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-    letter-spacing: 0.105em;
-    color: #CE2D4F;
+main
+  section
+  .container
+  .slick-more-products
+  a
+  .product
+  .order
+  .price
+  .old-price
+  :last-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.105em;
+  color: #ce2d4f;
 }
 
-main section .container .slick-more-products a .product .order .price .old-price {
-    display: flex;
-    align-items: center;
+main
+  section
+  .container
+  .slick-more-products
+  a
+  .product
+  .order
+  .price
+  .old-price {
+  display: flex;
+  align-items: center;
 }
 
 main section .container .slick-more-products a .product .order .price p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 145.9%;
-    /* identical to box height, or 18px */
-    letter-spacing: 0.035em;
-    color: rgba(56, 48, 48, 0.8);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 145.9%;
+  /* identical to box height, or 18px */
+  letter-spacing: 0.035em;
+  color: rgba(56, 48, 48, 0.8);
 }
 
 main section .slick-stock .slick-arrow.slick-next {
-    right: 30px;
-    z-index: 10;
+  right: 30px;
+  z-index: 10;
 }
 
 main section .slick-stock .slick-arrow.slick-prev {
-    left: 30px;
-    z-index: 10;
+  left: 30px;
+  z-index: 10;
 }
 
 .prev-stock {
-    position: absolute;
-    top: 50%;
-    left: -65px;
-    z-index: 10;
-    outline: none;
-    /* background-color: var(--pink); */
-    border: none;
-    padding: 10px;
-    background: url('/images/icons/prew.svg') 0 0 /20% no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    padding: 24px;
-    background-color: var(--pink);
-    height: 48px;
-    width: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .1s;
+  position: absolute;
+  top: 50%;
+  left: -65px;
+  z-index: 10;
+  outline: none;
+  /* background-color: var(--pink); */
+  border: none;
+  padding: 10px;
+  background: url("/images/icons/prew.svg") 0 0 /20% no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding: 24px;
+  background-color: var(--pink);
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
 }
 
 .prev-stock:hover {
-    transition: .1s;
-    background-color: var(--red);
-    cursor: pointer;
+  transition: 0.1s;
+  background-color: var(--red);
+  cursor: pointer;
 }
 
 .next-stock {
-    position: absolute;
-    top: 50%;
-    right: -65px;
-    z-index: 10;
-    outline: none;
-    /* background-color: var(--pink); */
-    border: none;
-    padding: 10px;
-    background: url('/images/icons/next.svg') 0 0 /20% no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    padding: 24px;
-    background-color: var(--pink);
-    height: 48px;
-    width: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .1s;
+  position: absolute;
+  top: 50%;
+  right: -65px;
+  z-index: 10;
+  outline: none;
+  /* background-color: var(--pink); */
+  border: none;
+  padding: 10px;
+  background: url("/images/icons/next.svg") 0 0 /20% no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding: 24px;
+  background-color: var(--pink);
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
 }
 
 .next-stock:hover {
-    transition: .1s;
-    background-color: var(--red);
-    cursor: pointer;
+  transition: 0.1s;
+  background-color: var(--red);
+  cursor: pointer;
 }
 
-.select-color.product input{
-    border: none;
-    outline: none;
-    width: 26px;
-    height: 26px;
-    margin: 0;
+.select-color.product input {
+  border: none;
+  outline: none;
+  width: 26px;
+  height: 26px;
+  margin: 0;
 }
 
-.select-color input:hover{
-    cursor: pointer;
+.select-color input:hover {
+  cursor: pointer;
 }

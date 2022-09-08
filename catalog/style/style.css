@@ -1,164 +1,163 @@
-main .container  .breadcrumb{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-bottom: 40px;
+main .container .breadcrumb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 /* main .container  .breadcrumb li{
     margin-right: 10px;
 } */
 
-
-main .container .breadcrumb li a{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(23, 23, 23, 0.55);
+main .container .breadcrumb li a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(23, 23, 23, 0.55);
 }
 
-main .container .breadcrumb li a::after{
-    content: '/';
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(23, 23, 23, 0.55);
+main .container .breadcrumb li a::after {
+  content: "/";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(23, 23, 23, 0.55);
 }
 
-main .container .breadcrumb .active{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+main .container .breadcrumb .active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-main .container h2{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
-    margin-bottom: 70px;
+main .container h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 70px;
 }
 
-main .container .catalog{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 70px;
+main .container .catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 main .container .catalog .product {
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-    background-color: var(--white);
-    border-radius: 10px;
-    padding: 32px 27px;
-    margin: 20px 16px 20px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 32px 27px;
+  margin: 20px 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 main .container .catalog .product .name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 145.9%;
-    letter-spacing: 0.035em;
-    color: #383030;
-    margin-bottom: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145.9%;
+  letter-spacing: 0.035em;
+  color: #383030;
+  margin-bottom: 24px;
 }
 
 main .container .catalog .product img {
-    object-fit: cover;
-    width: 271px;
-    height: 211px;
-    margin-bottom: 24px;
+  object-fit: cover;
+  width: 271px;
+  height: 211px;
+  margin-bottom: 24px;
 }
 
 main .container .catalog .product .order {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 main .container .catalog .product .order .price .coast {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    margin-right: 20px;
-    letter-spacing: 0.105em;
-    color: #383030;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  margin-right: 20px;
+  letter-spacing: 0.105em;
+  color: #383030;
 }
 
 main .container .catalog .product .order .price .old-price :first-of-type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.105em;
-    text-decoration-line: line-through;
-    margin-right: 10px;
-    color: #383030;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.105em;
+  text-decoration-line: line-through;
+  margin-right: 10px;
+  color: #383030;
 }
 
 main .container .catalog .product .order .price .old-price :last-of-type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-    letter-spacing: 0.105em;
-    color: #CE2D4F;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.105em;
+  color: #ce2d4f;
 }
 
 main .container .catalog .product .order .price .old-price {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main .container .catalog .product .order .price p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 145.9%;
-    /* identical to box height, or 18px */
-    letter-spacing: 0.035em;
-    color: rgba(56, 48, 48, 0.8);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 145.9%;
+  /* identical to box height, or 18px */
+  letter-spacing: 0.035em;
+  color: rgba(56, 48, 48, 0.8);
 }
 
 /*  */
 
-main section .text-block{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main section .text-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-main section .text-block .text h2{
-    margin-bottom: 30px;
+main section .text-block .text h2 {
+  margin-bottom: 30px;
 }
 
-main section .text-block .text p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 158.9%;
-    max-width: 500px;
+main section .text-block .text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 158.9%;
+  max-width: 500px;
 }
 
-main section .text-block .text p:first-of-type{
-    margin-bottom: 14px;
+main section .text-block .text p:first-of-type {
+  margin-bottom: 14px;
 }
