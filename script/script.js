@@ -108,7 +108,7 @@ $(document).ready(function () {
   $(".slick-img-review").slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,

@@ -2645,8 +2645,8 @@ form .select-color label:nth-last-of-type(1) {
   color: #000000;
 }
 
-.content-review-block .left-block .stars{
-    margin-bottom: 21px;
+.content-review-block .left-block .stars {
+  margin-bottom: 21px;
 }
 
 .content-review .info-person span:first-of-type {
@@ -2666,7 +2666,41 @@ form .select-color label:nth-last-of-type(1) {
   height: 111px;
 }
 
-.content-review .slick-img-review img {
-  margin-right: 24px;
+.content-review .slick-img-review .test img {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.content-review .slick-img-review .test {
+  position: relative;
+  margin-right: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-review .slick-img-review .test:hover::before {
+  content: "";
+  background-color: #111;
+  opacity: 0.7;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+
+.content-review .slick-img-review .test:hover::after {
+  content: "";
+  background-image: url("/images/icons/search.svg");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
