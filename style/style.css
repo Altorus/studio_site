@@ -1193,6 +1193,7 @@ main section .container .background-form form {
 }
 
 main section .container .background-form form .custom-input .input-form {
+  display: block;
   max-width: 271px;
   width: 255px;
   padding: 14px 25px;

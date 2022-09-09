@@ -245,6 +245,11 @@
     width: 30%;
     text-align: center;
   }
+
+  .review-section .custom-input .label-form.file p::before{
+    width: 40%;
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 810px) {
@@ -937,6 +942,16 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .review-section .custom-input .label-form.file p{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .review-section .custom-input .label-form.file p::before{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -967,10 +982,6 @@
   }
   .container {
     width: 370px;
-  }
-
-  .popup {
-    margin-left: -177px;
   }
 
   main section .container .about-grid {
@@ -1142,6 +1153,15 @@
 
   .content-review .info-person span:first-of-type {
     font-size: 16px;
+  }
+
+  .popup .review-section{
+    flex-direction: column;
+  }
+
+  .popup .review-section h2{
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 

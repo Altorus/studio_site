@@ -112,7 +112,7 @@ $(document).ready(function () {
 });
 
 $(".slick-img-review").slick({
-  dots: true,
+  dots: countSlides($(".slick-img-review")),
   arrows: false,
   // autoplay: true,
   infinite: true,
@@ -135,6 +135,23 @@ $(".slick-img-review").slick({
     },
   ],
 });
+
+function countSlides(slides) {
+  console.log(slides.sli);
+
+  let status;
+  // for (let i = 0; i < slides.length; i++) {
+  //   let countSlides = slides.eq(i).children();
+  //   if (countSlides.length <= 3) {
+  //     console.log("false");
+  //     slick;
+  //   } else {
+  //     console.log("true");
+  //     status = true;
+  //   }
+  // }
+  // return status
+}
 
 $(document).ready(function () {
   $(".slick-more-products").slick({
@@ -332,7 +349,6 @@ $(document).ready(function () {
 });
 
 let page = window.location.pathname;
-console.log(window.location.pathname);
 
 switch (page) {
   case "/catalog/product/":
