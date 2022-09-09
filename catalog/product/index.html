@@ -93,7 +93,7 @@
                             <div class="custom-input">
                                 <label class="label-form" for="size-model">Знаете размеры?</label>
                                 <select name="" class="input-form" id="size-model">
-                                    <option value="" selected disabled>Да</option>
+                                    <option value="">Да</option>
                                     <option value="">Нет</option>
                                 </select>
                             </div>
@@ -116,6 +116,7 @@
                                 <span>Вызвать замерщика</span>
                             </div>
                             <div class="select-color product">
+                                <p>Выберите цвет:</p>
                                 <label for="venge" data-title="Венге"></label>
                                 <input type="radio" name="color" value="Венге" id="venge">
                                 <label for="dub" data-title="Дуб Сонома"></label>
@@ -126,6 +127,7 @@
                                 <input type="radio" name="color" value="Белый" id="white">
                                 <label for="whiteWood" data-title="Выбеленое дерево"></label>
                                 <input type="radio" name="color" value="Выбеленое дерево" id="whiteWood">
+                                <div class="color-selecting"></div>
                             </div>
                             <p class="annatation">Полная палитра в офисах продаж</p>
 
@@ -277,16 +279,18 @@
                         </div>
                         <form class="info-grid" action="#">
                             <div class="select-color product">
+                                <p class="select">Выберите цвет:</p>
                                 <label for="venge" data-title="Венге"></label>
-                                <input type="radio" name="color" value="Венге" id="venge">
+                                <input type="radio" name="color-form" value="Венге" id="venge">
                                 <label for="dub" data-title="Дуб Сонома"></label>
-                                <input type="radio" name="color" value="Дуб Сонома" id="dub">
+                                <input type="radio" name="color-form" value="Дуб Сонома" id="dub">
                                 <label for="yasen" data-title="Ясень шимо светлый"></label>
-                                <input type="radio" name="color" value="Ясень шимо светлый" id="yasen">
+                                <input type="radio" name="color-form" value="Ясень шимо светлый" id="yasen">
                                 <label for="white" data-title="Белый"></label>
-                                <input type="radio" name="color" value="Белый" id="white">
+                                <input type="radio" name="color-form" value="Белый" id="white">
                                 <label for="whiteWood" data-title="Выбеленое дерево"></label>
-                                <input type="radio" name="color" value="Выбеленое дерево" id="whiteWood">
+                                <input type="radio" name="color-form" value="Выбеленое дерево" id="whiteWood">
+                                <div class="color-selecting-form"></div>
                             </div>
                             <p>Полная палитра в офисах продаж</p>
                             <input class="btn popup-open-order" type="button" value="Купить сейчас">

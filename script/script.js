@@ -311,13 +311,24 @@ $(document).ready(function () {
     }
   });
 
+  
+  $('input[name="color-form"]').click(() => {
+    var value = $('input[name="color-form"]:checked').val();
+    console.log(value);
+    $('.color-selecting-form').addClass('animate')
+    $('.color-selecting-form').html(value)
+  });
+
   $('input[name="color"]').click(() => {
     var value = $('input[name="color"]:checked').val();
+    $('.color-selecting').addClass('animate')
+    $('.color-selecting').html(value)
   });
+
 
   $("#menu").click(function () {
     // Тут класс твоей кнопки
-    $(".sub-menu").slideToggle(300); // Тут класс твоего меню, предварительно оно "display:none"
+    $(".sub-menu").slideToggle(300);
   });
 
   // Увеличение

@@ -11,7 +11,7 @@ main
   position: relative;
 }
 
-main
+/* main
   section
   .container
   .main-info-product
@@ -19,8 +19,8 @@ main
   form
   .select-color
   label {
-  z-index: 5;
-}
+  z-index: 1;
+} */
 
 main
   section
@@ -35,7 +35,7 @@ main
   color: black;
 }
 
-a
+/* a
   main
   section
   .container
@@ -49,7 +49,7 @@ a
   top: -20px;
   width: 100%;
   width: 100vw;
-}
+} */
 
 main
   section
@@ -140,6 +140,7 @@ main section .container .main-info-product .select-color input:hover {
   outline: 1px solid var(--black);
   cursor: pointer;
 }
+
 .popup input[type="text"]::-ms-clear {
   display: none;
   width: 0;
@@ -2451,7 +2452,39 @@ main .error .block-left span {
   right: 10px;
 }
 
+.info-product .info-block form .select:first-of-type,
+.select-color.product p{
+  color: #000;
+  margin-bottom: 10px;
+  letter-spacing: normal;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.color-selecting-form{
+  margin-top: 10px;
+}
+
+.color-selecting{
+  margin-bottom: 10px;
+}
+
+.color-selecting.animate,
+.color-selecting-form.animate{
+  animation: .7s show ease;
+}
+
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 form .custom-input .input-form {
+  display: block;
   max-width: 271px;
   width: 255px;
   padding: 14px 25px;
@@ -2535,16 +2568,13 @@ form .custom-checkbox input {
 
 .annatation {
   margin-bottom: 18px;
+  color: var(--yelou);
 }
 
 form .select-color input {
   opacity: 0;
   margin-right: 18px;
   position: relative;
-}
-
-form .select-color label {
-  z-index: 5;
 }
 
 form .select-color label::before {
@@ -2556,15 +2586,15 @@ form .select-color label::before {
 form .select-color label:last-of-type:hover::before {
   display: block;
   position: absolute;
-  top: -0px;
+  top: -40px;
   width: 100px;
 }
-form .select-color label:hover::before {
+/* form .select-color label:hover::before {
   display: block;
   position: absolute;
   top: -20px;
   width: 100vw;
-}
+} */
 
 form .select-color label:nth-last-of-type(5) {
   position: absolute;
