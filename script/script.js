@@ -112,7 +112,7 @@ $(document).ready(function () {
 });
 
 $(".slick-img-review").slick({
-  dots: countSlides($(".slick-img-review")),
+  dots: true,
   arrows: false,
   // autoplay: true,
   infinite: true,
@@ -120,6 +120,7 @@ $(".slick-img-review").slick({
   slidesToScroll: 1,
   autoplaySpeed: 3000,
   dotsClass: "products-dots",
+  // function: countSlides($(".slick-img-review")),
   responsive: [
     {
       breakpoint: 811,
@@ -136,22 +137,24 @@ $(".slick-img-review").slick({
   ],
 });
 
-function countSlides(slides) {
-  console.log(slides.sli);
+// function countSlides(slides) {
+//   // console.log(slides);
 
-  let status;
-  // for (let i = 0; i < slides.length; i++) {
-  //   let countSlides = slides.eq(i).children();
-  //   if (countSlides.length <= 3) {
-  //     console.log("false");
-  //     slick;
-  //   } else {
-  //     console.log("true");
-  //     status = true;
-  //   }
-  // }
-  // return status
-}
+//   let status
+//   for (let i = 0; i < slides.length; i++) {
+//     let countSlides = slides.eq(i).children();
+//     console.log(slides.eq(i).eq(0).attr('class'));
+//     if (countSlides.length <= 3) {
+//       console.log("false");
+//       slides.addClass("hidden-donts");
+//       $(".products-dots").css('display', 'none');
+
+//     } else {
+//       console.log("true");
+//       slides.addClass("hidden");
+//     }
+//   }
+// }
 
 $(document).ready(function () {
   $(".slick-more-products").slick({
